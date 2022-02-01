@@ -1,7 +1,7 @@
-@import url('./docs-css/reset.css');
-@import url('./docs-css//header.css');
-@import url('./docs-css//sidebar.css');
-@import url('./docs-css//footer.css');
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./sidebar.css');
+@import url('./footer.css');
 
 /* main section --- start */
 main{
