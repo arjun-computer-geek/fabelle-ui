@@ -3,18 +3,18 @@
     margin:0 2px;
 }
 .avatar-lg{
-    height: 150px;
-    width: 150px;
+    height: 9rem;
+    width: 9rem;
 }
 .avatar-md{
-    height: 100px;
-    width: 100px;
+    height: 6rem;
+    width: 6rem;
 }
 .avatar-sm{
-    height: 50px;
-    width: 50px;
+    height: 3rem;
+    width: 3rem;
 }
 .avatar-xs{
-    height: 25px;
-    width: 25px;
+    height: 1.5rem;
+    width: 1.5rem;
 }
