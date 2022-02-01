@@ -38,6 +38,9 @@ body{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
+b{
+    color: crimson;
+}
 a{
     text-decoration: none;
     color: var(--blue);
