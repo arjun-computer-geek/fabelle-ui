@@ -32,7 +32,7 @@ header .linkedin{
     grid-column: 11 / 112;
 }
 .logo{
-    grid-column: 2 / 4;
+    grid-column: 2 / 6;
     font-family: 'Bangers', cursive;
     color: var(--blue);
     font-size: 2.5rem;
@@ -40,19 +40,13 @@ header .linkedin{
 }
 /* header section --- end */
 
-@media only screen  and (max-width: 800px) {
+/* media query for mobile */
+@media only screen and (max-width: 600px){
     .logo{
-        grid-column: 2 / 5;
         font-size: 2rem;
     }
     
     header a{
         font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .logo{
-        grid-column: 2 / 6;
     }
 }
