@@ -10,6 +10,7 @@ main{
     grid-template-columns: repeat(6, 1fr);
     min-height: 100vh;
     padding: 2rem;
+    gap: .5rem;
     
 }
 main .content{
@@ -19,11 +20,11 @@ main .content{
 main .img-container{
     grid-column: 3 / 7;
     width: 100%;
-    height: auto;
+    height: 80vh;
 }
 main .img-container img{
     width: 100%;
-    height: 80vh;
+    height: 100%;
 }
 h1{
     font-family: 'Bangers', cursive;
@@ -38,4 +39,31 @@ main .code iframe{
 main .code{
     grid-column: 4 / 7;
     margin-top: 10rem;
+}
+
+/* css for media query */
+@media only screen and (max-width: 600px){
+    main{
+        grid-column: 1/ 13;
+    }
+    main .content{
+        grid-column: 1/ 7;
+    }
+    main .content h1{
+        font-size: 1.5rem;
+    }
+    main .img-container{
+        grid-column: 1 / 7;
+        height: 40vh;
+    }
+    #installation .content{
+        grid-column: 1 / 7;
+    }
+    main .code iframe{
+        min-height: 10rem;
+    }
+    main .code{
+        grid-column: 1/ 7;
+        margin-top: 2rem;
+    }
 }
