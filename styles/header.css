@@ -1,0 +1,41 @@
+/* header section --- start */
+header{
+    grid-column: 1 / 13;
+    background: transparent;
+    height: 5rem;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+    /* box-shadow: 0px 15px 10px -15px; */
+    z-index: 1;
+}
+header a{
+    font-size: 2.5rem;
+}
+header a:hover{
+    color: var(--hover-color);
+    transform: translateY(2px);
+}
+header a i:hover {
+    transform: scale(0.90);
+}
+header .github{
+    grid-column: 9 / 10;
+}
+header .twitter{
+    grid-column: 10 / 11;
+}
+header .linkedin{
+    grid-column: 11 / 112;
+}
+.logo{
+    grid-column: 2 / 4;
+    font-family: 'Bangers', cursive;
+    color: var(--blue);
+    font-size: 40px;
+    
+}
+/* header section --- end */

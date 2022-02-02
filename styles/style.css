@@ -1,0 +1,41 @@
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./sidebar.css');
+@import url('./footer.css');
+
+/* main section --- start */
+main{
+    grid-column: 2/ 12;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    min-height: 100vh;
+    padding: 2rem;
+    
+}
+main .content{
+    grid-column: 1/ 3;
+    align-self: center;
+}
+main .img-container{
+    grid-column: 3 / 7;
+    width: 100%;
+    height: auto;
+}
+main .img-container img{
+    width: 100%;
+    height: 80vh;
+}
+h1{
+    font-family: 'Bangers', cursive;
+}
+#installation .content{
+    grid-column: 1 / 4;
+}
+main .code iframe{
+    width: 100%;
+    min-height: 10rem;
+}
+main .code{
+    grid-column: 4 / 7;
+    margin-top: 10rem;
+}
