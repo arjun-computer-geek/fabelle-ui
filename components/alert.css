@@ -41,3 +41,11 @@
     background-color: var(--light-background);
     border-color: var(--light-border);
 }
+
+@media only screen and (max-width: 600px){
+    .alert {
+        padding: 0.5rem;
+        margin: 1rem 0;
+        font-size: 1rem;
+    }
+}
