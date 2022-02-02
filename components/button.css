@@ -1,0 +1,43 @@
+.btn{
+    padding: 1rem;
+    border: 2px solid ;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+.btn-primary{
+    color: var(--white);
+    background: var(--primary-color);
+    border: var(--primary-border);
+}
+.btn-secondary{
+    color: var(--white);
+    background: var(--secondary-color);
+    border: var(--secondary-border);
+}
+.btn-sucess{
+    color: var(--white);
+    background: var(--sucess-color);
+    border: var(--sucess-border);
+}
+.btn-danger{
+    color: var(--white);
+    background: var(--danger-color);
+    border: var(--danger-border);
+}
+.btn-warning{
+    color: var(--white);
+    background: var(--warning-color);
+    border: var(--warning-border);
+}
+.btn-light{
+    background: var(--light-background);
+    border: var(--light-border);
+}
+
+/* css for mobile responsive */
+@media only screen and (max-width: 600px){
+    .btn{
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+}

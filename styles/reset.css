@@ -50,18 +50,18 @@
     --sucess-border: #c3e6cb;
 
     /* danger color for different types compoents */
-    --danger-color: #721c24;
+    --danger-color: #b10617;
     --danger-background: #f8d7da;
     --danger-border: #f5c6cb;
 
     /* warning color for different types compoents */
-    --warning-color: #856404;
+    --warning-color: #d39f04;
     --warning-background: #fff3cd;
     --warning-border: #ffeeba;
 
     /* light color for different types compoents */
     --light-color: #818182;
-    --light-background: #fefefe;
+    --light-background: #dfdfdf;
     --light-border: #fdfdfe;
 }
 
@@ -86,7 +86,15 @@ p {
     margin-top: 1.2rem;
 }
 
-.btn {
+button {
+    background: transparent;
+    border: none;
+}
+button:hover{
+    cursor: pointer;
+}
+
+.doc-btn {
     padding: .5rem;
     font-size: 1.2rem;
     border-radius: 10px;
@@ -95,24 +103,24 @@ p {
     margin-top: 1.5rem;
 }
 
-.btn-border {
+.doc-btn-border {
     border: 2px solid var(--blue);
 }
 
-.btn-border:hover {
+.doc-btn-border:hover {
     background: var(--white);
 }
 
-.btn-solid {
+.doc-btn-solid {
     color: var(--body-color);
     background: var(--blue);
 }
 
-.btn-solid:hover {
+.doc-btn-solid:hover {
     color: var(--white);
     background: var(--hover-color);
 }
 
-.btn:hover {
+.doc-btn:hover {
     cursor: pointer;
 }
