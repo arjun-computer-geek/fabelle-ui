@@ -32,3 +32,16 @@ main .component-container .component-code{
     height: auto;
     margin: 1.8rem 0;
 }
+
+/* css for mobile responsive */
+@media only screen and (max-width: 600px){
+    main{
+        grid-column: 1 / 13;
+    }
+    main .component-container .bold-desc{
+        font-size: 1.8rem;
+    }
+    main .component-container .small-title{
+        font-size: 1.5rem;
+    }
+}
