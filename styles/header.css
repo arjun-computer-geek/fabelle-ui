@@ -35,7 +35,24 @@ header .linkedin{
     grid-column: 2 / 4;
     font-family: 'Bangers', cursive;
     color: var(--blue);
-    font-size: 40px;
+    font-size: 2.5rem;
     
 }
 /* header section --- end */
+
+@media only screen  and (max-width: 800px) {
+    .logo{
+        grid-column: 2 / 5;
+        font-size: 2rem;
+    }
+    
+    header a{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .logo{
+        grid-column: 2 / 6;
+    }
+}
