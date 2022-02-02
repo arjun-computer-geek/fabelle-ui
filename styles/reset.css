@@ -1,57 +1,92 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 /* width */
 ::-webkit-scrollbar {
     width: 5px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px var(--white); 
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--white);
     border-radius: 10px;
-    background:var(--body-color);
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: var(--blue); 
+    background: var(--body-color);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--blue);
     border-radius: 10px;
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: var(--hover-color); 
-  }
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--hover-color);
+}
+
 :root {
     --blue: #081F62;
     --white: #ffffff;
     --body-color: #E7E9F0;
-    --hover-color:#01227ef6;
+    --hover-color: #01227ef6;
     --text-color: #3e4152;
-  }
-body{
+
+    /* primary color for different types compoents */
+    --primary-color: #004085;
+    --primary-background: #cce5ff;
+    --primary-border: #b8daff;
+
+    /* secondary color for different types compoents */
+    --secondary-color: #383d41;
+    --secondary-background: #e2e3e5;
+    --secondary-border: #d6d8db;
+
+    /* sucess color for different types compoents */
+    --sucess-color: #155724;
+    --sucess-background: #d4edda;
+    --sucess-border: #c3e6cb;
+
+    /* danger color for different types compoents */
+    --danger-color: #721c24;
+    --danger-background: #f8d7da;
+    --danger-border: #f5c6cb;
+
+    /* warning color for different types compoents */
+    --warning-color: #856404;
+    --warning-background: #fff3cd;
+    --warning-border: #ffeeba;
+
+    /* light color for different types compoents */
+    --light-color: #818182;
+    --light-background: #fefefe;
+    --light-border: #fdfdfe;
+}
+
+body {
     font-family: 'Monda', sans-serif;
     background: var(--body-color);
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
-b{
+
+b {
     color: crimson;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--blue);
 }
 
-p{
+p {
     font-size: 1.2rem;
     margin-top: 1.2rem;
 }
 
-.btn{
+.btn {
     padding: .5rem;
     font-size: 1.2rem;
     border-radius: 10px;
@@ -59,23 +94,25 @@ p{
     margin: 2px;
     margin-top: 1.5rem;
 }
-.btn-border{
+
+.btn-border {
     border: 2px solid var(--blue);
 }
-.btn-border:hover{
+
+.btn-border:hover {
     background: var(--white);
 }
-.btn-solid{
+
+.btn-solid {
     color: var(--body-color);
     background: var(--blue);
 }
-.btn-solid:hover{
+
+.btn-solid:hover {
     color: var(--white);
     background: var(--hover-color);
 }
 
-.btn:hover{
+.btn:hover {
     cursor: pointer;
 }
-
-

@@ -4,65 +4,78 @@
 @import url('./footer.css');
 
 /* main section --- start */
-main{
+main {
     grid-column: 2/ 12;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     min-height: 100vh;
     padding: 2rem;
     gap: .5rem;
-    
+
 }
-main .content{
+
+main .content {
     grid-column: 1/ 3;
     align-self: center;
 }
-main .img-container{
+
+main .img-container {
     grid-column: 3 / 7;
     width: 100%;
     height: 80vh;
 }
-main .img-container img{
+
+main .img-container img {
     width: 100%;
     height: 100%;
 }
-h1{
+
+h1 {
     font-family: 'Bangers', cursive;
 }
-#installation .content{
+
+#installation .content {
     grid-column: 1 / 4;
 }
-main .code iframe{
+
+main .code iframe {
     width: 100%;
     min-height: 10rem;
 }
-main .code{
+
+main .code {
     grid-column: 4 / 7;
     margin-top: 10rem;
 }
 
 /* css for media query */
-@media only screen and (max-width: 600px){
-    main{
+@media only screen and (max-width: 600px) {
+    main {
         grid-column: 1/ 13;
     }
-    main .content{
+
+    main .content {
         grid-column: 1/ 7;
     }
-    main .content h1{
+
+    main .content h1 {
         font-size: 1.5rem;
     }
-    main .img-container{
+
+    main .img-container {
         grid-column: 1 / 7;
         height: 40vh;
     }
-    #installation .content{
+
+    #installation .content {
         grid-column: 1 / 7;
     }
-    main .code iframe{
+
+    main .code iframe {
         min-height: 10rem;
     }
-    main .code{
+
+    main .code {
         grid-column: 1/ 7;
         margin-top: 2rem;
     }
