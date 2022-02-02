@@ -14,7 +14,9 @@ aside a{
     font-size: 1.25rem;
     font-weight: 400;
 }
-
+aside a:hover{
+    color: crimson;
+}
 aside a:nth-child(1){
     display: none;
 }
