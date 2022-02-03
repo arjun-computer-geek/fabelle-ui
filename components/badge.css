@@ -1,0 +1,35 @@
+.badge-container{
+    position: relative;
+    width: fit-content;
+    box-sizing: border-box;
+}
+.badge{
+    padding: 0.2rem 0.65rem;
+    color: var(--white);
+    font-size: .75em;
+    line-height: 1;
+    text-align: center;
+    border-radius: 0.3rem;
+}
+.badge-primary{
+    background: var(--primary-color);
+}
+.badge-secondary{
+    background: var(--secondary-color);
+}
+.badge-success{
+    background: var(--success-color);
+}
+.badge-danger{
+    background: var(--danger-color);
+}
+.badge-warning{
+    background: var(--warning-color);
+}
+.badge-light{
+    background: var(--light-color);
+}
+
+.round-pill-badge{
+    border-radius: 50rem;
+}
