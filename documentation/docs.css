@@ -33,6 +33,11 @@ main .component-container .component-preview {
     margin: 1.25rem 0;
     padding: 1.25rem;
 }
+main .note{
+    border: 2px solid var(--danger-color);
+    margin: 1.5rem 0;
+    padding: 1rem;
+}
 
 main .component-container .component-code {
     width: 100%;
