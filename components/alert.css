@@ -19,9 +19,9 @@
 }
 
 .alert-success {
-    color: var(--sucess-color);
-    background-color: var(--sucess-background);
-    border-color: var(--sucess-border);
+    color: var(--success-color);
+    background-color: var(--success-background);
+    border-color: var(--success-border);
 }
 
 .alert-danger {

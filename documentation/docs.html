@@ -15,11 +15,11 @@
     <!-- icon's Links -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- component library css links -->
-    <link rel="stylesheet" href="../components/fabelle-ui.css">
-
     <!-- custom css -->
     <link rel="stylesheet" href="./docs.css">
+    
+    <!-- component library css links -->
+    <link rel="stylesheet" href="../components/fabelle-ui.css">
 
     <title>fabelle-UI | Docs</title>
 </head>
@@ -47,19 +47,19 @@
         <a href="#avatar">Avatar</a>
         <a href="#alert">Alert</a>
         <a href="#badge">Badge</a>
-        <a href="#">Button</a>
-        <a href="#">Card</a>
-        <a href="#">Image</a>
-        <a href="#">Input</a>
-        <a href="#">Lists</a>
-        <a href="#">Modal</a>
-        <a href="#">Navigation</a>
-        <a href="#">Rating</a>
-        <a href="#">Simplified Grid</a>
-        <a href="#">Slider</a>
-        <a href="#">Text Utilities</a>
-        <a href="#">Toast</a>
-        <a href="#">Typography</a>
+        <a href="#button">Button</a>
+        <a href="#card">Card</a>
+        <a href="#image">Image</a>
+        <a href="#input">Input</a>
+        <a href="#list">List</a>
+        <a href="#modal">Modal</a>
+        <a href="#navigation">Navigation</a>
+        <a href="#rating">Rating</a>
+        <a href="#grid">Simplified Grid</a>
+        <a href="#sidebar">Slider</a>
+        <a href="#text">Text Utilities</a>
+        <a href="#toast">Toast</a>
+        <a href="#typography">Typography</a>
     </aside>
     <!-- Sidebar -- Ends -->
 
@@ -69,15 +69,18 @@
         <section id="avatar" class="component-container">
             <h2 class="main-heading">Avatar</h2>
             <p class="bold-desc">
-            Avatar can be used to show user's profile picture on profile information page, on navigation bar, in blogs grid items.
+                Avatar can be used to show user's profile picture on profile information page, on navigation bar, in
+                blogs grid items.
             </p>
 
             <h3 class="small-title">Example of Image Avatar</h3>
-            <p>Avatar is available in 4 different sizes. You can use image in Avatar. You need to include class <b>avatar</b> and for size add class according to size <b>avatar-lg</b>, <b>avatar-md</b>, <b>avatar-sm</b>, <b>avatar-xs</b> (e.g. class="avatar avatar-lg-size").
+            <p>Avatar is available in 4 different sizes. You can use image in Avatar. You need to include class
+                <b>avatar</b> and for size add class according to size <b>avatar-lg</b>, <b>avatar-md</b>,
+                <b>avatar-sm</b>, <b>avatar-xs</b> (e.g. class="avatar avatar-lg-size").
             </p>
 
             <div class="component-preview">
-                <img class="avatar avatar-lg"  src="../images/user1.jpg" alt="avatar">
+                <img class="avatar avatar-lg" src="../images/user1.jpg" alt="avatar">
                 <img class="avatar avatar-md" src="../images/user2.jpg" alt="avatar">
                 <img class="avatar avatar-sm" src="../images/profile.jpeg" alt="avatar">
                 <img class="avatar avatar-xs" src="../images/user3.webp" alt="avatar">
@@ -96,11 +99,14 @@
         <section id="alert" class="component-container">
             <h2 class="main-heading">Alert</h2>
             <p class="bold-desc">
-                Alert provides contextual feedback messages for typical user actions with the handful of available and flexible alert messages.
+                Alert provides contextual feedback messages for typical user actions with the handful of available and
+                flexible alert messages.
             </p>
 
             <h3 class="small-title">Example of Alert</h3>
-            <p>There are six types of <b>Alerts : </b> <b>alert-primary</b>, <b>alert-secondary</b>, <b>alert-success</b>, <b>alert-danger</b> <b>alert-warning</b>,<b>alert-light</b>, (e.g. class="alert alert-danger").
+            <p>There are six types of <b>Alerts : </b> <b>alert-primary</b>, <b>alert-secondary</b>,
+                <b>alert-success</b>, <b>alert-danger</b> <b>alert-warning</b>,<b>alert-light</b>, (e.g. class="alert
+                alert-danger").
             </p>
 
             <div class="component-preview">
@@ -130,6 +136,84 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
 
+            </div>
+        </section>
+
+        <!-- Button -- component -->
+        <section id="button" class="component-container">
+            <h2 class="main-heading">Buttons</h2>
+            <p class="bold-desc">
+                Buttons are also called as call to action. We have range of buttons and their states. You may use a tag
+                or button element, you need to add respective classes, and you are good to go.
+            </p>
+
+            <!-- colored button -->
+            <h3 class="small-title">Example of coloured Buttons</h3>
+            <p>There are six types of <b>Buttons : </b> <b>btn-primary</b>, <b>btn-secondary</b>, <b>btn-success</b>,
+                <b>btn-danger</b> <b>btn-warning</b>,<b>btn-light</b>, (e.g. class="btn btn-danger").
+            </p>
+
+            <div class="component-preview">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-light">Light</button>
+            </div>
+            <div class="component-code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520class%253D%2522btn%2520btn-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-danger%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-light%2522%253ELight%253C%252Fbutton%253E"
+                    style="height: 206px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #151718;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            
+            <!-- button notes -->
+            <div class="note">
+                <h3 class="small-title"><b>Notes:</b></h3>
+
+                <p>The <b>.btn</b> classes is designed in such a way that it can be used with the <b>&lt;button&gt;</b> element. However, you can also use these classes on <b>&lt;a&gt;</b> or <b>&lt;input&gt;</b> elements (though some browsers may apply a slightly different rendering).</p>
+
+                <p>When using button classes on <b>&lt;a&gt;</b> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a <b>role="button"</b> to appropriately convey their purpose to assistive technologies such as screen readers.</p>
+
+                <div class="component-preview">
+                    <a class="btn btn-primary" href="#" role="button">Link</a>
+                    <button class="btn btn-warning" type="submit">Button</button>
+                    <input class="btn btn-secondary" type="button" value="Input">
+                    <input class="btn btn-success" type="submit" value="Submit">
+                    <input class="btn btn-primary" type="reset" value="Reset">
+                </div>
+                <div class="component-code">
+                    <iframe
+                        src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Ca%2520class%253D%2522btn%2520btn-primary%2522%2520href%253D%2522%2523%2522%2520role%253D%2522button%2522%253ELink%253C%252Fa%253E%250A%253Cbutton%2520class%253D%2522btn%2520btn-warning%2522%2520type%253D%2522submit%2522%253EButton%253C%252Fbutton%253E%250A%253Cinput%2520class%253D%2522btn%2520btn-secondary%2522%2520type%253D%2522button%2522%2520value%253D%2522Input%2522%253E%250A%253Cinput%2520class%253D%2522btn%2520btn-success%2522%2520type%253D%2522submit%2522%2520value%253D%2522Submit%2522%253E%250A%253Cinput%2520class%253D%2522btn%2520btn-primary%2522%2520type%253D%2522reset%2522%2520value%253D%2522Reset%2522%253E"
+                        style="height: 206px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #151718;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+                </div>
+            </div>
+
+            <!-- outline button -->
+            <h3 class="small-title">Example of Outline Buttons</b></h3>
+
+            <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <b>.btn-outline-*</b> ones to remove all background images and colors on any button.
+            </p>
+
+            <div class="component-preview">
+                <button type="button" class="btn btn-outline">Outline</button>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+            </div>
+            <div class="component-code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline%2522%253EOutline%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-primary%2522%253EPrimary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-secondary%2522%253ESecondary%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-success%2522%253ESuccess%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-danger%2522%253EDanger%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-warning%2522%253EWarning%253C%252Fbutton%253E%250A%253Cbutton%2520type%253D%2522button%2522%2520class%253D%2522btn%2520btn-outline-light%2522%253ELight%253C%252Fbutton%253E"
+                    style="height: 225px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #151718;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
 
             </div>
         </section>
