@@ -17,7 +17,7 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="./docs.css">
-    
+
     <!-- component library css links -->
     <link rel="stylesheet" href="../components/fabelle-ui.css">
 
@@ -168,14 +168,19 @@
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
-            
+
             <!-- button notes -->
             <div class="note">
                 <h3 class="small-title"><b>Notes:</b></h3>
 
-                <p>The <b>.btn</b> classes is designed in such a way that it can be used with the <b>&lt;button&gt;</b> element. However, you can also use these classes on <b>&lt;a&gt;</b> or <b>&lt;input&gt;</b> elements (though some browsers may apply a slightly different rendering).</p>
+                <p>The <b>.btn</b> classes is designed in such a way that it can be used with the <b>&lt;button&gt;</b>
+                    element. However, you can also use these classes on <b>&lt;a&gt;</b> or <b>&lt;input&gt;</b>
+                    elements (though some browsers may apply a slightly different rendering).</p>
 
-                <p>When using button classes on <b>&lt;a&gt;</b> elements that are used to trigger in-page functionality (like collapsing content), rather than linking to new pages or sections within the current page, these links should be given a <b>role="button"</b> to appropriately convey their purpose to assistive technologies such as screen readers.</p>
+                <p>When using button classes on <b>&lt;a&gt;</b> elements that are used to trigger in-page functionality
+                    (like collapsing content), rather than linking to new pages or sections within the current page,
+                    these links should be given a <b>role="button"</b> to appropriately convey their purpose to
+                    assistive technologies such as screen readers.</p>
 
                 <div class="component-preview">
                     <a class="btn btn-primary" href="#" role="button">Link</a>
@@ -196,7 +201,8 @@
             <!-- outline button -->
             <h3 class="small-title">Example of Outline Buttons</b></h3>
 
-            <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes with the <b>.btn-outline-*</b> ones to remove all background images and colors on any button.
+            <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes
+                with the <b>.btn-outline-*</b> ones to remove all background images and colors on any button.
             </p>
 
             <div class="component-preview">
@@ -226,32 +232,33 @@
             </p>
 
             <h3 class="small-title">Example of Text badges</h3>
-            <p>We have 2 types of text badges that can be integrated with text. Badge with rounded edges and square edges. Font size of badge text is in <b>em</b>. It will change as per the parent element's font-size.
+            <p>We have 2 types of text badges that can be integrated with text. Badge with rounded edges and square
+                edges. Font size of badge text is in <b>em</b>. It will change as per the parent element's font-size.
             </p>
 
             <div class="component-preview">
                 <h1 class="badge-container">
-                    Example of Heading with Badge 
+                    Example of Heading with Badge
                     <span class="badge badge-primary">new</span>
                 </h1>
                 <h2 class="badge-container">
-                    Example of Heading with Badge 
+                    Example of Heading with Badge
                     <span class="badge badge-secondary">new</span>
                 </h2>
                 <h3 class="badge-container">
-                    Example of Heading with Badge 
+                    Example of Heading with Badge
                     <span class="badge badge-success">new</span>
                 </h3>
                 <h4 class="badge-container">
-                    Example of Heading with Badge 
+                    Example of Heading with Badge
                     <span class="badge badge-danger round-pill-badge">new</span>
                 </h4>
                 <h5 class="badge-container">
-                    Example of Heading with Badge 
+                    Example of Heading with Badge
                     <span class="badge badge-warning round-pill-badge">new</span>
                 </h5>
                 <h6 class="badge-container">
-                    Example of Heading with Badge 
+                    Example of Heading with Badge
                     <span class="badge badge-light round-pill-badge">new</span>
                 </h6>
             </div>
@@ -261,13 +268,71 @@
                     style="height: 650px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #151718;"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
-
-
-                
-
             </div>
         </section>
 
+        <!-- Input -- component -->
+        <section id="input" class="component-container">
+            <h2 class="main-heading">Input</h2>
+            <p class="bold-desc">
+                The <b>Input</b> field can be specified using where a user can enter data. Like User's Name, Password,
+                Email, etc.
+            </p>
+
+            <h3 class="small-title">Example of Input</h3>
+            <p>We have a simple input field with placeholder. Input are avilable in different colors too.
+                For using different colors use different classes like <b>.input-primary</b>, <b>.input-secondary</b>,
+                <b>.input-success</b>, <b>.input-danger</b>, <b>.input-warning</b>, <b>.input-light</b>
+                (e.g. class="input-field input-primary")
+            </p>
+
+            <div class="component-preview">
+                <div class="form-group">
+                    <input class="input-field" type="text" placeholder="Input something">
+                    <input class="input-field input-primary" type="text" placeholder="Input something">
+                    <input class="input-field input-secondary" type="text" placeholder="Input something">
+                    <input class="input-field input-success" type="text" placeholder="Input something">
+                    <input class="input-field input-danger" type="text" placeholder="Input something">
+                    <input class="input-field input-warning" type="text" placeholder="Input something">
+                    <input class="input-field input-light" type="text" placeholder="Input something">
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-primary%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-secondary%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-success%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-danger%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-warning%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-light%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%253C%252Fdiv%253E"
+                    style="height: 277px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #151718;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+            <!-- bottom border input -->
+            <h3 class="small-title">Example of Bottom Bordered Input</h3>
+            <p>
+                You have to add only class <b>.input-bottm-border</b>   
+            </p>
+
+            <div class="component-preview">
+                <div class="form-group">
+                    <input class="input-field input-bottom-border" type="text" placeholder="Input something">
+                    <input class="input-field input-bottom-border input-primary" type="text" placeholder="Input something">
+                    <input class="input-field input-bottom-border input-secondary" type="text" placeholder="Input something">
+                    <input class="input-field input-bottom-border input-success" type="text" placeholder="Input something">
+                    <input class="input-field input-bottom-border input-danger" type="text" placeholder="Input something">
+                    <input class="input-field input-bottom-border input-warning" type="text" placeholder="Input something">
+                    <input class="input-field input-bottom-border input-light" type="text" placeholder="Input something">
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe
+                    src="https://carbon.now.sh/embed?bg=rgba%28171%2C+184%2C+195%2C+1%29&t=seti&wt=none&l=auto&width=680&ds=true&dsyoff=20px&dsblur=68px&wc=true&wa=true&pv=0px&ph=0px&ln=false&fl=1&fm=Hack&fs=18px&lh=133%25&si=false&es=2x&wm=false&code=%253Cdiv%2520class%253D%2522form-group%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-bottom-border%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-bottom-border%2520input-primary%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-bottom-border%2520input-secondary%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-bottom-border%2520input-success%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-bottom-border%2520input-danger%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-bottom-border%2520input-warning%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%2520%2520%2520%2520%253Cinput%2520class%253D%2522input-field%2520input-bottom-border%2520input-light%2522%2520type%253D%2522text%2522%2520placeholder%253D%2522Input%2520something%2522%253E%250A%253C%252Fdiv%253E"
+                    style="height: 445px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #151718;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+
+            </div>
+        </section>
     </main>
     <!-- Main -- Ends -->
     <script src="../index.js" defer></script>
