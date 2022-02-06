@@ -1,20 +1,68 @@
 .card {
     background-color: var(--white);
     overflow: hidden;
-    box-shadow: 0px 1rem 1.5rem rgba(0,0,0,0.5);
+    box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
     min-height: 20rem;
     width: 15rem;
 }
-.card:hover{
-    box-shadow: 0px 1rem 2rem rgba(0,0,0,0.6);
+
+.card:hover {
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.6);
 }
-.card img{
+
+.card img {
     width: 100%;
     object-fit: cover;
 }
-.card-round-corner{
+
+.card-round-corner {
     border-radius: 1rem;
 }
-.card-container{
+
+.card-container {
     padding: 2rem 1rem;
+}
+
+.card-horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 60rem;
+    min-height: 25rem;
+}
+
+.card-horizontal img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.card-horizontal .card-container {
+    padding: 2rem;
+    width: 50%;
+}
+
+.card-horizontal .card-container .product-name {
+    color: var(--font-color);
+    font-size: 3rem;
+    font-family: "Bentham", serif;
+}
+
+.card-horizontal .card-container .product-owner {
+    color: var(--light-color);
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.card-horizontal .card-container .product-description {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.card-horizontal .card-container .product-price {
+    font-family: "Suranna", serif;
+    font-size: 2rem;
+    font-weight: lighter;
 }
