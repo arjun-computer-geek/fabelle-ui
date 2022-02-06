@@ -31,6 +31,7 @@ html{
 }
 
 :root {
+    --font-color: #474747;
     --blue: #081F62;
     --white: #ffffff;
     --body-color: #E7E9F0;
