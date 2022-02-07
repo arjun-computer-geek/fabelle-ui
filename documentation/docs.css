@@ -65,4 +65,9 @@ main .component-container .component-code {
     main .component-container .small-title {
         font-size: 1.5rem;
     }
+    main .component-container .flex-container{
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+    }
 }
