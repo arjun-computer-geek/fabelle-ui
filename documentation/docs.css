@@ -33,14 +33,16 @@ main .component-container .component-preview {
     margin: 1.25rem 0;
     padding: 1.25rem;
 }
-main .component-container .flex-container{
+
+main .component-container .flex-container {
     display: flex;
     gap: 1.5rem;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
 }
-main .note{
+
+main .note {
     border: 2px solid var(--danger-color);
     margin: 1.5rem 0;
     padding: 1rem;
@@ -48,7 +50,6 @@ main .note{
 
 main .component-container .component-code {
     width: 100%;
-    height: auto;
     margin: 1.8rem 0;
 }
 
@@ -65,7 +66,8 @@ main .component-container .component-code {
     main .component-container .small-title {
         font-size: 1.5rem;
     }
-    main .component-container .flex-container{
+
+    main .component-container .flex-container {
         display: flex;
         gap: 1rem;
         width: 100%;
