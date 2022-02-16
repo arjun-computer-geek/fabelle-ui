@@ -18,16 +18,16 @@
     height: 100%;
     width: 15%;
 }
-.nav .brand .logo{
+.nav .logo{
     height: 100%;
     width: 30%;
 }
-.nav .brand .logo img{
+.nav .logo img{
     border-radius: 50%;
     height: 100%;
     width: 100%;
 }
-.nav .brand .brand-name{
+.nav .brand-name{
     font-size: 1.5rem;
 }
 .nav .nav-link{
