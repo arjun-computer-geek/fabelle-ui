@@ -1,10 +1,13 @@
 :root {
+    --defaul-color: #0000;
     --font-color: #474747;
     --blue: #081F62;
     --white: #ffffff;
     --body-color: #E7E9F0;
     --hover-color: #01227ef6;
     --text-color: #3e4152;
+    --focus-color: #DA3232;
+    --focus-liter-color: #d34949;
 
     /* primary color for different types compoents */
     --primary-color: #004085;
