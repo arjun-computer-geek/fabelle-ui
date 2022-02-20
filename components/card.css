@@ -2,8 +2,8 @@
     background-color: var(--white);
     overflow: hidden;
     box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
-    min-height: 20rem;
-    width: 20rem;
+    min-height: 15rem;
+    width: 15rem;
 }
 
 .card:hover {
@@ -27,7 +27,8 @@
 }
 
 .card-container .product-name {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    line-height: 1.2rem;
 }
 
 .card-container .product-owner {
@@ -40,6 +41,7 @@
 
 .card-container .product-ratings {
     color: var(--focus-color);
+    font-size: 1rem;
 }
 
 .card-container .product-ratings span {
@@ -53,7 +55,7 @@
 }
 
 .card-container .product-add-to-cart-btn {
-    padding: 0.5rem 2rem;
+    padding: 0.2em 0.5em;
     margin-right: 1rem;
     background-color: var(--focus-color);
     color: var(--white);
@@ -66,9 +68,8 @@
 
 .card-container .product-wish-btn {
     border: 2px solid var(--font-color);
-    height: 3.5em;
-    width: 3.5em;
-    margin: 0 1rem;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 50%;
 }
 
