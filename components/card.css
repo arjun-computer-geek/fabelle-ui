@@ -20,7 +20,10 @@
 }
 
 .card-container {
-    padding: 1em 1.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+    padding-bottom: 0.8em;
 }
 
 .card-container .product-name {
