@@ -24,6 +24,7 @@
     padding-right: 1em;
     padding-top: 0;
     padding-bottom: 0.8em;
+    position: relative;
 }
 
 .card-container .product-name {
@@ -71,6 +72,9 @@
     height: 2.2rem;
     width: 2.2rem;
     border-radius: 50%;
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1.2rem
 }
 
 .card-container .product-wish-btn:hover {
@@ -82,24 +86,28 @@
     color: var(--font-color);
 }
 
-.card-dismiss{
+.card-dismiss {
     position: relative;
 }
-.card-dismiss .btn-dismiss{
+
+.card-dismiss .btn-dismiss {
     display: block;
     font-size: 1.2rem;
     position: absolute;
     top: 0;
     right: 0.5rem;
 }
-.card-dismiss .btn-dismiss:hover{
+
+.card-dismiss .btn-dismiss:hover {
     cursor: pointer;
 }
-.card-dismiss .btn-dismiss i{
+
+.card-dismiss .btn-dismiss i {
     font-weight: 50;
     color: var(--font-color)
 }
-.card-dismiss .btn-dismiss i:hover{
+
+.card-dismiss .btn-dismiss i:hover {
     color: var(--default-color);
 
 }
