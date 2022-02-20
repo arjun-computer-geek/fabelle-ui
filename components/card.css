@@ -68,8 +68,8 @@
 
 .card-container .product-wish-btn {
     border: 2px solid var(--font-color);
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 2.2rem;
+    width: 2.2rem;
     border-radius: 50%;
 }
 
@@ -78,8 +78,30 @@
 }
 
 .card-container .product-wish-btn i {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: var(--font-color);
+}
+
+.card-dismiss{
+    position: relative;
+}
+.card-dismiss .btn-dismiss{
+    display: block;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+}
+.card-dismiss .btn-dismiss:hover{
+    cursor: pointer;
+}
+.card-dismiss .btn-dismiss i{
+    font-weight: 50;
+    color: var(--font-color)
+}
+.card-dismiss .btn-dismiss i:hover{
+    color: var(--default-color);
+
 }
 
 .card-horizontal {
@@ -100,12 +122,14 @@
 }
 
 .card-horizontal .card-container .product-name {
+    line-height: 5rem;
     color: var(--font-color);
     font-size: 3rem;
     font-family: "Bentham", serif;
 }
 
 .card-horizontal .card-container .product-owner {
+
     color: var(--light-color);
     font-size: 1rem;
     font-family: "Raleway", sans-serif;
