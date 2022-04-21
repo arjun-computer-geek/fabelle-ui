@@ -16,7 +16,7 @@ This repository is all about component library code and documentation code of Fa
 
 ## Quick start
 
-Copy the below link to get started with BeadsUI component. All you need to do is to paste the below link to your file
+Copy the below link to get started with Fabelle UI component. All you need to do is to paste the below link to your file
 
 ### HTML Link
 
