@@ -11,6 +11,23 @@
     text-align: center;
     border-radius: 0.3rem;
 }
+.badge-status{
+    padding: 0.5rem;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+.badge-icon{
+    font-size: 2rem;
+}
+.badge-number{
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    right: -1rem;
+}
 .badge-primary{
     background: var(--primary-color);
 }
