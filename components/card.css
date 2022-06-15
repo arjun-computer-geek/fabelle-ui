@@ -158,6 +158,66 @@
     font-weight: lighter;
 }
 
+.relative-card-container {
+    position: relative;
+}
+
+.card-with-badge::before {
+    position: absolute;
+    content: '';
+    background: var(--danger-color);
+    height: 28px;
+    z-index: -1;
+    width: 28px;
+    top: 0.6rem;
+    right: -0.5rem;
+    transform: rotate(45deg);
+}
+
+.card-with-badge::after {
+    position: absolute;
+    content: 'Best Seller';
+    top: 2px;
+    right: -15px;
+    padding: 2px;
+    width: 5rem;
+    background: var(--danger-color);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+}
+
+.card-overlay-container::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--font-color);
+    background-color: rgba(245, 243, 243, 0.726);
+    content: "Out Of Stock";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.card .card-heading{
+    color: red;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.card .card-body{
+    font-size: 1rem;
+    border-bottom: 1px solid var(--font-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.card .card-footer a{
+    margin-left: 0.5rem;
+}
+
 /* mobile responsive */
 @media only screen and (max-width: 600px) {
     .card-horizontal {
