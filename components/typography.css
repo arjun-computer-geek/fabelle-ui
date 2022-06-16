@@ -48,3 +48,65 @@ p, .p{
 .text-right{
     text-align: right;
 }
+.vertical-middle{
+    justify-content: center;
+    align-items: center;
+}
+.vertical-middle-self{
+    align-self: center;
+    justify-self: center;
+}
+.text-strike-through{
+    text-decoration: line-through;
+}
+.text-underline{
+    text-decoration: underline;
+}
+.text-bold-weight{
+    font-weight: 700;
+}
+.text-light-weight{
+    font-weight: 300;
+}
+.text-regular-weight{
+    font-weight: 500;
+}
+.text-small-size{
+    font-size: 0.875rem;
+}
+.text-mark{
+    background-color: var(--light-color);
+}
+.primary-text-color{
+    color: var(--primary-color);
+}
+.secondary-text-color{
+    color: var(--secondary-text-color);
+}
+.success-text-color{
+    color:var(--success-color);
+}
+.padding-around-span{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+
+@media screen and (max-width: 768px){
+    
+    .h1, h1{
+        font-size: 2rem;
+    }
+    .h2, h2{
+        font-size: 1.75rem;
+    }
+    .h3, h3{
+        font-size: 1.5rem;
+    }
+    .h4, h4, .h5, h5, .h6, h6{
+        font-size: 1.25rem;
+    }
+    .body-cp-lg{
+        font-size: 1.15rem;
+    }
+}
