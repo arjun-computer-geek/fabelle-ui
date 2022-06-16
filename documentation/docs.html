@@ -55,6 +55,7 @@
         <a href="#image">Image</a>
         <a href="#navbar">Navbar</a>
         <a href="#grid">Grid</a>
+        <a href="#typography">Typography</a>
     </aside>
     <!-- Sidebar -- Ends -->
 
@@ -702,7 +703,9 @@
             </p>
 
             <h3 class="small-title">Example of Responsive Image</h3>
-            <p>You can add class <b> img-responsive</b> to make your image fit the width of container. It's height will get adjusted by keeping the aspect ratio same. If you want to change the aspect ratio, you will have to crop the image.</p>
+            <p>You can add class <b> img-responsive</b> to make your image fit the width of container. It's height will
+                get adjusted by keeping the aspect ratio same. If you want to change the aspect ratio, you will have to
+                crop the image.</p>
 
             <div class="component-preview">
                 <img class="img-responsive" src="../images/responsive-image.jpg" alt="img">
@@ -828,6 +831,109 @@
             </div>
         </section>
 
+        <!-- typography -- component -->
+        <section id="typography" class="component-container">
+            <h2 class="main-heading">Typography</h2>
+            <p class="bold-desc">Check out below text utilities.</p>
+
+            <h3 class="small-title">Example of Heading text</h3>
+            <p>For heading you can use <b>h1, h2, h3, h4, h5, h6 </b> elements.</p>
+            <p>The same font-styling is present for class names <b> h1, h2, h3, h4, h5, h6</b> class. You can add one of
+                these classes to style the text.</p>
+
+            <div class="component-preview">
+                <h1>H1-Heading</h1>
+                <h2>H2-Heading</h2>
+                <h3>H3-Heading</h3>
+                <h4>H4-Heading</h4>
+                <h5>H5-Heading</h5>
+                <h6>H6-Heading</h6>
+
+                <!-- Style text with class -->
+                <div class="h1">H1-Heading</div>
+                <h3 class="h4">H4-Heading</h3>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/41wkX3MhPr5RSYicjJKM"
+                    style="height: 260px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- paragraph component -->
+            <h3 class="small-title">Example of Paragraph text</h3>
+            <p>For paragraph you can use p element.</p>
+            <p>The same font-styling is present for class name <b> p, body-cp-rg</b> class. You can add one of these
+                classes to style the text. Other than this if you want to adjust text to small or large, you can use<b>
+                    body-cp-lg, body-cp-sm </b> class.</p>
+
+            <div class="component-preview">
+                <p>P-Paragraph-Text</p>
+
+                <!-- Style text with class -->
+                <div class="p">Text with paragraph font</div>
+                <h4 class="p">H4-Heading with Paragraph font</h4>
+                <p class="body-cp-lg">P-Paragraph-body-copy-large</p>
+                <p class="body-cp-rg">P-Paragraph-body-copy-regular style</p>
+                <p class="body-cp-md">P-Paragraph-body-copy-medium</p>
+                <p class="body-cp-sm">P-Paragraph-body-copy-small</p>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/alKgXd2Mws9UYkrvupTh"
+                    style="height: 241px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Positioned component -->
+            <h3 class="small-title">Example of Positioned text</h3>
+            <p>To align the text add <b> text-center, text-left, text-right </b> class to wrapper element</p>
+
+            <div class="component-preview">
+                <h6 class="text-center">H6-Heading Text Align Center</h6>
+                <h6 class="text-left">H6-Heading Text Align left</h6>
+                <h6 class="text-right">H6-Heading Text Align right</h6>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/kIlDwQJfLGMaSvqGyK4V"
+                    style="height: 130px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Some extra styles component -->
+            <h3 class="small-title">Example of Some Extra styles</h3>
+            <p>
+            <ul style="padding: 2rem;">
+                <li>You can use the mark tag to highlight text. Add <b> text-mark </b>class to mark tag</li>
+                <li>To strike-through the text, add <b> text-strike-through </b> class</li>
+                <li>To make text bold (weight: 700), add <b>text-bold-weight </b>class</li>
+                <li>To make text regular weight (weight: 500), add<b> text-regular-weight</b> class</li>
+                <li>To make text light (weight: 300), add <b> text-light-weight </b> class</li>
+                <li>To make text small in size (12px), add <b> text-small-size </b>class</li>
+                <li>To make text color change there are 3 class, add one of the classes <b>primary-text-color,
+                        secondary-text-color, success-text-color</b> </li>
+            </ul>
+            </p>
+
+            <div class="component-preview">
+                <p>You can use the mark tag to <mark class="text-mark">highlight</mark> text.</p>
+                <p class="text-strike-through">This line of text is meant to be treated as no longer accurate.</p>
+                <p class="text-bold-weight">Text with bold font weight</p>
+                <p class="text-regular-weight">Text with regular font weight</p>
+                <p class="text-light-weight">Text with light font weight</p>
+                <p><small class="text-small-size">Small size text</small></p>
+                <p class="primary-text-color">Text with primary-color</p>
+                <p class="secondary-text-color">Text with secondary-color</p>
+                <p class="success-text-color">Text with success-color</p>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/Ip4mbz2NSt5UUA6aTTci"
+                    style="height: 241px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
     </main>
     <!-- Main -- Ends -->
     <script src="../index.js" defer></script>
