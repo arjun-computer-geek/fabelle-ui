@@ -51,10 +51,11 @@
         <a href="#badge">Badge</a>
         <a href="#button">Button</a>
         <a href="#card">Card</a>
+        <a href="#grid">Grid</a>
         <a href="#input">Input</a>
         <a href="#image">Image</a>
+        <a href="#lists">Lists</a>
         <a href="#navbar">Navbar</a>
-        <a href="#grid">Grid</a>
         <a href="#typography">Typography</a>
     </aside>
     <!-- Sidebar -- Ends -->
@@ -587,6 +588,47 @@
             </div>
         </section>
 
+        <!-- Grid -- component -->
+        <section id="grid" class="component-container">
+            <h2 class="main-heading">Simplified Grid</h2>
+            <p class="bold-desc">
+                Simplified Grid is a CSS grid for your website. By just add some classes.
+            </p>
+
+            <h3 class="small-title">Grid</h3>
+            <p>Simple Grid is a <b>12-column</b>, lightweight CSS grid to help you quickly build responsive websites.
+            </p>
+            <p>Each column is contained within rows, which are contained within a container. If you want to make mobile
+                responsive then add <b>.container-responsive</b> class to the container. (e.g. class=container
+                container-responsive"</p>
+
+            <div class="component-preview">
+                <div class="container container-responsive">
+                    <div class="row">
+                        <div class="col-1">one</div>
+                        <div class="col-11">eleven</div>
+                        <div class="col-2">two</div>
+                        <div class="col-10">ten</div>
+                        <div class="col-3">three</div>
+                        <div class="col-9">nine</div>
+                        <div class="col-4">four</div>
+                        <div class="col-8">eight</div>
+                        <div class="col-5">five</div>
+                        <div class="col-7">seven</div>
+                        <div class="col-6">six</div>
+                        <div class="col-6">six</div>
+                        <div class="col-12">twelve</div>
+                    </div>
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/sTKpG2Pt6XPRbCvwjsue"
+                    style="height: 372px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
         <!-- Input -- component -->
         <section id="input" class="component-container">
             <h2 class="main-heading">Input</h2>
@@ -733,6 +775,107 @@
             </div>
         </section>
 
+        <!--Lists -- component -->
+        <section id="lists" class="component-container">
+            <h2 class="main-heading">Lists</h2>
+            <p class="bold-desc">Lists can be used at so many places, navigation bar, stacked notifications, article
+                pages, etc.</p>
+
+            <h3 class="small-title">Example of Unordered List with bullets</h3>
+            <p>Add class according to bullet style. Copy html code below and add your desired list items.</p>
+
+            <div class="component-preview flex-container">
+                <ul class="styled-list">
+                    <li>list item1</li>
+                    <li>list item2</li>
+                    <li>list item3</li>
+                </ul>
+                <ul class="styled-list list-style-square">
+                    <li>list item1</li>
+                    <li>list item2</li>
+                    <li>list item3</li>
+                </ul>
+                <ul class="styled-list list-style-circle">
+                    <li>list item1</li>
+                    <li>list item2</li>
+                    <li>list item3</li>
+                </ul>
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/W63kNVrPYOArrsCcC7zn"
+                    style="height: 353px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- ordered list -->
+            <h3 class="small-title">Example of Ordered List with bullets</h3>
+            <p>Add class according to bullet style. Copy html code below and add your desired list items.
+                To reverse the order of ordered list, add <b> reversed </b> attribute to <b> ol </b> element</p>
+
+            <div class="component-preview flex-container">
+                <ol class="styled-list flex-items list-container">
+                    <li>List item with numbers</li>
+                    <li>List item with numbers</li>
+                    <li>List item with numbers</li>
+                </ol>
+                <ol class="styled-list list-style-small-alpha flex-items list-container" reversed>
+                    <li>Reversed list item</li>
+                    <li>Reversed list item</li>
+                    <li>Reversed list item</li>
+                </ol>
+                <ol class="styled-list list-style-small-alpha flex-items list-container">
+                    <li>List item with alphabets</li>
+                    <li>List item with alphabets</li>
+                    <li>List item with alphabets</li>
+                </ol>
+                <ol class="styled-list list-style-small-roman flex-items list-container">
+                    <li>List item with roman</li>
+                    <li>List item with roman</li>
+                    <li>List item with roman</li>
+                </ol>
+                <ol class="styled-list list-style-capital-alpha flex-items list-container">
+                    <li>List item with alphabets</li>
+                    <li>List item with alphabets</li>
+                    <li>List item with alphabets</li>
+                </ol>
+                <ol class="styled-list list-style-capital-roman flex-items list-container">
+                    <li>List item with roman</li>
+                    <li>List item with roman</li>
+                    <li>List item with roman</li>
+                </ol>
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/RVvicGlcSKR7R9ze9hFB"
+                    style="height: 632px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- no bullets list -->
+            <h3 class="small-title">Example of List with no bullets</h3>
+            <p>If you want list stacked but with no bullet and indentation, then you can add <b>list-style-none</b>
+                class.</p>
+            <p>Class <b> styled-list </b> applies padding between two list items.</p>
+
+            <div class="component-preview flex-container">
+                <ul class="styled-list list-style-none"> 
+                    <li>list item1</li>
+                    <li>list item2</li>
+                    <li>list item3</li>
+                </ul>
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/dMSvZe1tKEGpnBrxP2nf"
+                    style="height: 167px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
         <!-- Navbar -- component -->
         <section id="navbar" class="component-container">
             <h2 class="main-heading">Navbar</h2>
@@ -786,46 +929,6 @@
             <div class="component-code">
                 <iframe src="https://carbon.now.sh/embed/q5QezPuFyLnJ1Ceh230y"
                     style="height: 669px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
-                    sandbox="allow-scripts allow-same-origin">
-                </iframe>
-            </div>
-        </section>
-        <!-- Grid -- component -->
-        <section id="grid" class="component-container">
-            <h2 class="main-heading">Simplified Grid</h2>
-            <p class="bold-desc">
-                Simplified Grid is a CSS grid for your website. By just add some classes.
-            </p>
-
-            <h3 class="small-title">Grid</h3>
-            <p>Simple Grid is a <b>12-column</b>, lightweight CSS grid to help you quickly build responsive websites.
-            </p>
-            <p>Each column is contained within rows, which are contained within a container. If you want to make mobile
-                responsive then add <b>.container-responsive</b> class to the container. (e.g. class=container
-                container-responsive"</p>
-
-            <div class="component-preview">
-                <div class="container container-responsive">
-                    <div class="row">
-                        <div class="col-1">one</div>
-                        <div class="col-11">eleven</div>
-                        <div class="col-2">two</div>
-                        <div class="col-10">ten</div>
-                        <div class="col-3">three</div>
-                        <div class="col-9">nine</div>
-                        <div class="col-4">four</div>
-                        <div class="col-8">eight</div>
-                        <div class="col-5">five</div>
-                        <div class="col-7">seven</div>
-                        <div class="col-6">six</div>
-                        <div class="col-6">six</div>
-                        <div class="col-12">twelve</div>
-                    </div>
-                </div>
-            </div>
-            <div class="component-code">
-                <iframe src="https://carbon.now.sh/embed/sTKpG2Pt6XPRbCvwjsue"
-                    style="height: 372px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
