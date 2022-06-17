@@ -10,3 +10,25 @@ document.addEventListener('scroll', ()=>{
         header.style.backgroundColor = "transparent";
     }
 })
+
+// script for modal
+const showModalBtn = document.querySelector("#show-modal");
+const modalContainer = document.querySelector("#modal-example");
+const modalCloseBtn = document.querySelector("#modal-close-btn");
+
+// handling show modal
+showModalBtn.addEventListener("click", () => {
+modalContainer.style.display = "flex"
+})
+
+// handling close modal
+modalCloseBtn.addEventListener("click", () => {
+    modalContainer.style.display = "none"
+})
+
+// handling when click outside of moal
+window.onclick = (event) =>{
+    if (event.target.id === 'modal-example') {
+      modalContainer.style.display = "none";
+    }
+  }
