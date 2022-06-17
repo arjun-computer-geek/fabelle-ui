@@ -55,6 +55,7 @@
         <a href="#input">Input</a>
         <a href="#image">Image</a>
         <a href="#lists">Lists</a>
+        <a href="#modal">Modal</a>
         <a href="#navbar">Navbar</a>
         <a href="#typography">Typography</a>
     </aside>
@@ -861,7 +862,7 @@
             <p>Class <b> styled-list </b> applies padding between two list items.</p>
 
             <div class="component-preview flex-container">
-                <ul class="styled-list list-style-none"> 
+                <ul class="styled-list list-style-none">
                     <li>list item1</li>
                     <li>list item2</li>
                     <li>list item3</li>
@@ -871,6 +872,69 @@
             <div class="component-code">
                 <iframe src="https://carbon.now.sh/embed/dMSvZe1tKEGpnBrxP2nf"
                     style="height: 167px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!--Modal -- component -->
+        <section id="modal" class="component-container">
+            <h2 class="main-heading">Modal</h2>
+            <p class="bold-desc">Modals are positioned over everything else in the document and remove scroll from the
+                page. It gets closed only with close button on modal pop-up.</p>
+
+            <h3 class="small-title">Example of Modal</h3>
+            <p>Add class accordingly.</p>
+
+            <div class="component-preview flex-container">
+                <div class="modal">
+                    <h2 class="modal-header">Modal Header <span>X</span></h2>
+                    <p class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta
+                        culpa illum voluptates inventore id, blanditiis beatae, nam tempore, consectetur deserunt qui
+                        porro a ratione laboriosam. Dignissimos tempore recusandae dolorum!</p>
+                    <div class="modal-footer">Modal footer</div>
+                </div>
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/HWbuSqISgahdBJL7vw7g"
+                    style="height: 204px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Modal live demo -->
+            <h3 class="small-title">Live Demo</h3>
+            <p>Click on the below CTA to open modal. Once the modal is open user will not be able to scroll or do any
+                action on the main page. To close the pop-up, click on close icon or Back button. Functionality is
+                achieved using JavaScript</p>
+
+            <div class="component-preview">
+                <button class="btn btn-primary" id="show-modal">Show</button>
+                <div class="modal-container" id="modal-example">
+                    <div class="modal">
+                        <h2 class="modal-header">Modal Header <span id="modal-close-btn">X</span></h2>
+                        <p class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+                            soluta culpa illum voluptates inventore id, blanditiis beatae, nam tempore, consectetur
+                            deserunt qui porro a ratione laboriosam. Dignissimos tempore recusandae dolorum!</p>
+                        <div class="modal-footer">Modal footer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/aDypGTcH11Ra580IpixE"
+                    style="height: 260px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- javascript for modal -->
+            <h3 class="small-title">JavaScript</h3>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/ILA0OT66qfZyhj7p2gNd"
+                    style="height: 465px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>
