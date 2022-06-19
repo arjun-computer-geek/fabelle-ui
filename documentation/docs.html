@@ -59,6 +59,7 @@
         <a href="#navbar">Navbar</a>
         <a href="#rating">Rating</a>
         <a href="#typography">Typography</a>
+        <a href="#toast">Toast</a>
     </aside>
     <!-- Sidebar -- Ends -->
 
@@ -1195,6 +1196,63 @@
             <div class="component-code">
                 <iframe src="https://carbon.now.sh/embed/Ip4mbz2NSt5UUA6aTTci"
                     style="height: 241px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- toast -- component -->
+        <section id="toast" class="component-container">
+            <h2 class="main-heading">Toast</h2>
+            <p class="bold-desc">This component can be used for toast or snackbar component. Toast is mostly used to
+                show feedback message. Snackbar is to used show message that need user action.</p>
+
+            <h3 class="small-title">Example of Toast</h3>
+            <p>Add <b> toast </b>class to wrapper. Toast has 3 themes, for error, success, warning, add <b>
+                    toast-success, toast-error, toast-info </b>class to style the theme.</p>
+
+            <div class="component-preview flex-container">
+                <div class="unhide-item toast toast-success">
+                    Saved!
+                    <button  class="close-btn">X</button>
+                </div>
+
+                <div class="unhide-item toast toast-error">
+                    Not Saved! Try again later.
+                    <button  class="close-btn">X</button>
+                </div>
+
+                <div class="unhide-item toast toast-inform">
+                    Saving to server...
+                    <button  class="close-btn">X</button>
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/3fNvfMXgMu4rNqPrOClS"
+                    style="height: 335px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- live demo -->
+            <h3 class="small-title">Live Demo</h3>
+            <div class="component-preview">
+                <div class="toast toast-error" id="toast-example-success">
+                    Something went wrong!
+                    <button  class="close-btn" id="toast-example-success-btn">X</button>
+                </div>
+                <button class="btn btn-primary show-toast-example-btn">Show Toast</button>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/QBlbEM2rpl2g5plYFZ2u"
+                    style="height: 167px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <h3 class="small-title">JavaScript</h3>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/tc9lSA3IsvZZ40U3hr0H"
+                    style="height: 353px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
                     sandbox="allow-scripts allow-same-origin">
                 </iframe>
             </div>

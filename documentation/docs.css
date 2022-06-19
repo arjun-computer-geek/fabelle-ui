@@ -52,6 +52,10 @@ main .component-container .component-code {
     width: 100%;
     margin: 1.8rem 0;
 }
+main .unhide-item{
+    position: relative;
+    display: block;
+}
 
 /* css for mobile responsive */
 @media only screen and (max-width: 600px) {
