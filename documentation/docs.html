@@ -58,6 +58,7 @@
         <a href="#modal">Modal</a>
         <a href="#navbar">Navbar</a>
         <a href="#rating">Rating</a>
+        <a href="#slider">Slider</a>
         <a href="#typography">Typography</a>
         <a href="#toast">Toast</a>
     </aside>
@@ -1097,6 +1098,44 @@
             </div>
         </section>
 
+        <!-- slider -- component -->
+        <section id="slider" class="component-container">
+            <h2 class="main-heading">Slider</h2>
+            <p class="bold-desc">
+                Sliders are used to decide range for something like sound in videos, price in shopping sites, etc.</p>
+
+            <h3 class="small-title">Example of styled slider</h3>
+
+            <div class="component-preview ">
+                <div class="slider-container">
+                    <label class="slider-track" for="range">
+                        <input class="slider-input" type="range" name="range" id="range" min="0" max="150" value="15" />
+                    </label>
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/RiH8h0c45BXOWF1ayzNO"
+                    style="height: 167px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Example of slider with icon -->
+            <h3 class="small-title">Example of slider with icon</h3>
+            <div class="component-preview ">
+                <div class="slider-with-icon">
+                    <label class="slider-with-icon-label" for="range2"><i class="fa fa-volume-up"></i></label>
+                    <input type="range" name="range2" id="range2" min="0" max="100" value="30" />
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/8AY8f5jAQVq82V5zMPfP"
+                    style="height: 148px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
         <!-- typography -- component -->
         <section id="typography" class="component-container">
             <h2 class="main-heading">Typography</h2>
@@ -1214,17 +1253,17 @@
             <div class="component-preview flex-container">
                 <div class="unhide-item toast toast-success">
                     Saved!
-                    <button  class="close-btn">X</button>
+                    <button class="close-btn">X</button>
                 </div>
 
                 <div class="unhide-item toast toast-error">
                     Not Saved! Try again later.
-                    <button  class="close-btn">X</button>
+                    <button class="close-btn">X</button>
                 </div>
 
                 <div class="unhide-item toast toast-inform">
                     Saving to server...
-                    <button  class="close-btn">X</button>
+                    <button class="close-btn">X</button>
                 </div>
             </div>
             <div class="component-code">
@@ -1239,7 +1278,7 @@
             <div class="component-preview">
                 <div class="toast toast-error" id="toast-example-success">
                     Something went wrong!
-                    <button  class="close-btn" id="toast-example-success-btn">X</button>
+                    <button class="close-btn" id="toast-example-success-btn">X</button>
                 </div>
                 <button class="btn btn-primary show-toast-example-btn">Show Toast</button>
             </div>
