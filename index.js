@@ -69,3 +69,24 @@ ratingStarsForm.addEventListener("submit", (e)=>{
 })
 
 // ***************************************************************************
+
+// ******************************************************************************
+// js for toast
+
+const toastExample = document.querySelector("#toast-example-success");
+const btnToShowToast = document.querySelector(".show-toast-example-btn");
+const btnToCloseToast = document.querySelector("#toast-example-success-btn");
+
+let timerIdForToast;
+btnToShowToast.addEventListener("click", ()=>{
+    toastExample.style.display = "block";
+    timerIdForToast = setTimeout(()=>{
+        toastExample.style.display = "none";  
+    },2000)
+})
+btnToCloseToast.addEventListener("click", ()=>{
+    clearTimeout(timerIdForToast);
+    toastExample.style.display = "none"; 
+})
+
+// **************************************************************************************
