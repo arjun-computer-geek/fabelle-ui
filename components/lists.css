@@ -1,0 +1,47 @@
+.list-style-none {
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.styled-list {
+    background-color: var(--white);
+    padding: 2rem;
+}
+
+.styled-list li:not(:last-child) {
+    padding-bottom: 0.625rem;
+}
+
+.list-style-circle {
+    list-style-type: circle;
+}
+
+.list-style-square {
+    list-style-type: square;
+}
+
+.list-style-small-alpha {
+    list-style-type: lower-alpha;
+}
+
+.list-style-capital-alpha {
+    list-style-type: upper-alpha;
+}
+
+.list-style-small-roman {
+    list-style-type: lower-roman;
+}
+
+.list-style-capital-roman {
+    list-style-type: upper-roman;
+}
+
+.list-container {
+    border-radius: 0.3rem;
+    background-color: var(--white);
+    padding: 1rem 32px 1rem 40px;
+}
+
+.list-style-none.list-container {
+    padding-inline-start: 32px;
+}

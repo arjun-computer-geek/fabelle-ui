@@ -1,0 +1,249 @@
+.card {
+    background-color: var(--white);
+    overflow: hidden;
+    box-shadow: 0px 1rem 1.5rem rgba(0, 0, 0, 0.5);
+    min-height: 15rem;
+    width: 15rem;
+}
+
+.card:hover {
+    box-shadow: 0px 1rem 2rem rgba(0, 0, 0, 0.6);
+}
+
+.card img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-round-corner {
+    border-radius: 1rem;
+}
+
+.card-container {
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 0;
+    padding-bottom: 0.8em;
+    position: relative;
+}
+
+.card-container .product-name {
+    font-size: 1rem;
+    line-height: 1.2rem;
+}
+
+.card-container .product-owner {
+    color: var(--light-color);
+    font-size: 0.8rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+}
+
+.card-container .product-ratings {
+    color: var(--focus-color);
+    font-size: 1rem;
+}
+
+.card-container .product-ratings span {
+    color: var(--font-color);
+}
+
+.card-container .product-price {
+    font-family: "Suranna", serif;
+    font-size: 1.5rem;
+    padding: none;
+}
+
+.card-container .product-add-to-cart-btn {
+    padding: 0.2em 0.5em;
+    margin-right: 1rem;
+    background-color: var(--focus-color);
+    color: var(--white);
+    border-color: none;
+}
+
+.card-container .product-add-to-cart-btn:hover {
+    background-color: var(--focus-liter-color);
+}
+
+.card-container .product-wish-btn {
+    border: 2px solid var(--font-color);
+    height: 2.2rem;
+    width: 2.2rem;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 1.2rem;
+    right: 1.2rem
+}
+
+.card-container .product-wish-btn:hover {
+    border-color: var(--default-color);
+}
+
+.card-container .product-wish-btn i {
+    font-size: 1.2rem;
+    color: var(--font-color);
+}
+
+.card-dismiss {
+    position: relative;
+}
+
+.card-dismiss .btn-dismiss {
+    display: block;
+    font-size: 1.2rem;
+    position: absolute;
+    top: 0;
+    right: 0.5rem;
+}
+
+.card-dismiss .btn-dismiss:hover {
+    cursor: pointer;
+}
+
+.card-dismiss .btn-dismiss i {
+    font-weight: 50;
+    color: var(--font-color)
+}
+
+.card-dismiss .btn-dismiss i:hover {
+    color: var(--default-color);
+
+}
+
+.card-horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 60rem;
+    min-height: 25rem;
+}
+
+.card-horizontal img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.card-horizontal .card-container {
+    padding: 2rem;
+    width: 50%;
+}
+
+.card-horizontal .card-container .product-name {
+    line-height: 5rem;
+    color: var(--font-color);
+    font-size: 3rem;
+    font-family: "Bentham", serif;
+}
+
+.card-horizontal .card-container .product-owner {
+
+    color: var(--light-color);
+    font-size: 1rem;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.card-horizontal .card-container .product-description {
+    font-family: "Playfair Display", serif;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.card-horizontal .card-container .product-price {
+    font-family: "Suranna", serif;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.relative-card-container {
+    position: relative;
+}
+
+.card-with-badge::before {
+    position: absolute;
+    content: '';
+    background: var(--danger-color);
+    height: 28px;
+    z-index: -1;
+    width: 28px;
+    top: 0.6rem;
+    right: -0.5rem;
+    transform: rotate(45deg);
+}
+
+.card-with-badge::after {
+    position: absolute;
+    content: 'Best Seller';
+    top: 2px;
+    right: -15px;
+    padding: 2px;
+    width: 5rem;
+    background: var(--danger-color);
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+}
+
+.card-overlay-container::after {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: var(--font-color);
+    background-color: rgba(245, 243, 243, 0.726);
+    content: "Out Of Stock";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.card .card-heading{
+    color: red;
+    font-size: 2rem;
+    font-weight: 100;
+}
+.card .card-body{
+    font-size: 1rem;
+    border-bottom: 1px solid var(--font-color);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+}
+.card .card-footer a{
+    margin-left: 0.5rem;
+}
+
+/* mobile responsive */
+@media only screen and (max-width: 600px) {
+    .card-horizontal {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: 5rem;
+    }
+
+    .card-horizontal .card-container {
+        padding: 0.5rem;
+    }
+
+    .card-horizontal .card-container .product-name {
+        font-size: 1.5rem;
+    }
+
+    .card-horizontal .card-container .product-owner {
+        font-size: 0.5rem;
+    }
+
+    .card-horizontal .card-container .product-description {
+        font-size: 0.5rem;
+    }
+
+    .card-horizontal .card-container .product-price {
+        font-size: 1rem;
+    }
+}

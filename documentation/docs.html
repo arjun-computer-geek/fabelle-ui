@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Monda:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bentham|Playfair+Display|Raleway:400,500|Suranna|Trocchi"
+        rel="stylesheet">
+
+    <!-- icon's Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="./docs.css">
+
+    <!-- component library css links -->
+    <link rel="stylesheet" href="../components/fabelle-ui.css">
+
+    <title>fabelle-UI | Docs</title>
+</head>
+
+<body>
+    <!-- Header -- starts -->
+    <header>
+        <a href="/" class="logo">FABELLE UI</a>
+        <a href="https://github.com/arjun-computer-geek/" class="github" target="_blank"><i class="fa fa-github"
+                aria-hidden="true"></i>
+        </a>
+        <a href="https://twitter.com/arjun_comp_geek" class="twitter" target="_blank"><i class="fa fa-twitter"
+                aria-hidden="true"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/arjun-kumar-a752731a2" class="linkedin" target="_blank"><i
+                class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+    </header>
+    <!-- Header -- Ends -->
+
+    <!-- Sidebar -- Starts -->
+    <aside>
+        <a id="dropdown"><i class="fa fa-caret-down" aria-hidden="true"></i>
+        </a>
+        <a href="#avatar">Avatar</a>
+        <a href="#alert">Alert</a>
+        <a href="#badge">Badge</a>
+        <a href="#button">Button</a>
+        <a href="#card">Card</a>
+        <a href="#grid">Grid</a>
+        <a href="#input">Input</a>
+        <a href="#image">Image</a>
+        <a href="#lists">Lists</a>
+        <a href="#modal">Modal</a>
+        <a href="#navbar">Navbar</a>
+        <a href="#rating">Rating</a>
+        <a href="#slider">Slider</a>
+        <a href="#typography">Typography</a>
+        <a href="#toast">Toast</a>
+    </aside>
+    <!-- Sidebar -- Ends -->
+
+    <!-- Main -- starts -->
+    <main>
+        <!-- Avatar -- component -->
+        <section id="avatar" class="component-container">
+            <h2 class="main-heading">Avatar</h2>
+            <p class="bold-desc">
+                Avatar can be used to show user's profile picture on profile information page, on navigation bar, in
+                blogs grid items.
+            </p>
+
+            <h3 class="small-title">Image Avatar</h3>
+            <p>Avatar is available in 4 different sizes. You can use image in Avatar. You need to include class
+                <b>avatar</b> and for size add class according to size <b>avatar-lg</b>, <b>avatar-md</b>,
+                <b>avatar-sm</b>, <b>avatar-xs</b> (e.g. class="avatar avatar-lg-size").
+            </p>
+
+            <div class="component-preview">
+                <img class="avatar avatar-lg" src="../images/user1.jpg" alt="avatar">
+                <img class="avatar avatar-md" src="../images/user2.jpg" alt="avatar">
+                <img class="avatar avatar-sm" src="../images/profile.jpeg" alt="avatar">
+                <img class="avatar avatar-xs" src="../images/user3.webp" alt="avatar">
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/rRQnUboEmHf2rVGqlhEK"
+                    style="height: 144px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Alert -- component -->
+        <section id="alert" class="component-container">
+            <h2 class="main-heading">Alert</h2>
+            <p class="bold-desc">
+                Alert provides contextual feedback messages for typical user actions with the handful of available and
+                flexible alert messages.
+            </p>
+
+            <h3 class="small-title">Basic Alert</h3>
+            <p>There are six types of <b>Alerts : </b> <b>alert-primary</b>, <b>alert-secondary</b>,
+                <b>alert-success</b>, <b>alert-danger</b> <b>alert-warning</b>,<b>alert-light</b>, (e.g. class="alert
+                alert-danger").
+            </p>
+
+            <div class="component-preview">
+                <div class="alert alert-primary" role="alert">This is a primary alert</div>
+                <div class="alert alert-secondary">This is a secondary alert</div>
+                <div class="alert alert-success">This is a success alert</div>
+                <div class="alert alert-danger">This is a danger alert</div>
+                <div class="alert alert-warning">This is a warning alert</div>
+                <div class="alert alert-light">This is a light alert</div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/Y3vehUzyxy7U9IaIgQkK"
+                    style="height: 179px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Badge -- component -->
+        <section id="badge" class="component-container">
+            <h2 class="main-heading">Badge</h2>
+            <p class="bold-desc">
+                Badges are used to show notification, show number count or labeling.
+            </p>
+
+            <!-- Text badges -->
+            <h3 class="small-title">Text badges</h3>
+            <p>We have 2 types of text badges that can be integrated with text. Badge with rounded edges and square
+                edges. Font size of badge text is in <b>em</b>. It will change as per the parent element's font-size.
+            </p>
+
+            <div class="component-preview">
+                <h1 class="badge-container">
+                    Example of Heading with Badge
+                    <span class="badge badge-primary">new</span>
+                </h1>
+                <h2 class="badge-container">
+                    Example of Heading with Badge
+                    <span class="badge badge-secondary">new</span>
+                </h2>
+                <h3 class="badge-container">
+                    Example of Heading with Badge
+                    <span class="badge badge-success">new</span>
+                </h3>
+                <h4 class="badge-container">
+                    Example of Heading with Badge
+                    <span class="badge badge-danger round-pill-badge">new</span>
+                </h4>
+                <h5 class="badge-container">
+                    Example of Heading with Badge
+                    <span class="badge badge-warning round-pill-badge">new</span>
+                </h5>
+                <h6 class="badge-container">
+                    Example of Heading with Badge
+                    <span class="badge badge-light round-pill-badge">new</span>
+                </h6>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/Zgsq0mQ9dS2Kkn4CtaTZ"
+                    style="height: 494px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- Avatar badges -->
+            <h3 class="small-title">Avatar & Icon badges </h3>
+
+            <div class="component-preview flex-container">
+                <div class="badge-container">
+                    <img class="avatar avatar-lg" src="../images/user1.jpg" alt="avatar">
+                    <span class="badge badge-danger badge-status"></span>
+                </div>
+                <div class="badge-container">
+                    <i class="fa fa-shopping-cart badge-icon"></i>
+                    <span class="badge badge-primary badge-number">2</span>
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/zkWx9ryT8iXHQhgVFDkO"
+                    style="height: 223px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+        <!-- Button -- component -->
+        <section id="button" class="component-container">
+            <h2 class="main-heading">Buttons</h2>
+            <p class="bold-desc">
+                Buttons are also called as call to action. We have range of buttons and their states. You may use a tag
+                or button element, you need to add respective classes, and you are good to go.
+            </p>
+
+            <!-- colored button -->
+            <h3 class="small-title">Coloured Buttons</h3>
+            <p>There are six types of <b>Buttons : </b> <b>btn-primary</b>, <b>btn-secondary</b>, <b>btn-success</b>,
+                <b>btn-danger</b> <b>btn-warning</b>,<b>btn-light</b>, (e.g. class="btn btn-danger").
+            </p>
+
+            <div class="component-preview">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-light">Light</button>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/OatA74lzOhhHFku40MPi"
+                    style="height: 179px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+
+            <!-- button notes -->
+            <div class="note">
+                <h3 class="small-title"><b>Notes:</b></h3>
+
+                <p>The <b>.btn</b> classes is designed in such a way that it can be used with the <b>&lt;button&gt;</b>
+                    element. However, you can also use these classes on <b>&lt;a&gt;</b> or <b>&lt;input&gt;</b>
+                    elements (though some browsers may apply a slightly different rendering).</p>
+
+                <p>When using button classes on <b>&lt;a&gt;</b> elements that are used to trigger in-page functionality
+                    (like collapsing content), rather than linking to new pages or sections within the current page,
+                    these links should be given a <b>role="button"</b> to appropriately convey their purpose to
+                    assistive technologies such as screen readers.</p>
+
+                <div class="component-preview">
+                    <a class="btn btn-primary" href="#" role="button">Link</a>
+                    <button class="btn btn-warning" type="submit">Button</button>
+                    <input class="btn btn-secondary" type="button" value="Input">
+                    <input class="btn btn-success" type="submit" value="Submit">
+                    <input class="btn btn-primary" type="reset" value="Reset">
+                </div>
+                <div class="component-code">
+                    <iframe src="https://carbon.now.sh/embed/X6PI28J0FKEqHBffkP48"
+                        style="height: 162px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                        sandbox="allow-scripts allow-same-origin">
+                    </iframe>
+
+                </div>
+            </div>
+
+            <!-- outline button -->
+            <h3 class="small-title">Outline Buttons</b></h3>
+
+            <p>In need of a button, but not the hefty background colors they bring? Replace the default modifier classes
+                with the <b>.btn-outline-*</b> ones to remove all background images and colors on any button.
+            </p>
+
+            <div class="component-preview">
+                <button type="button" class="btn btn-outline">Outline</button>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+                <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                <button type="button" class="btn btn-outline-success">Success</button>
+                <button type="button" class="btn btn-outline-danger">Danger</button>
+                <button type="button" class="btn btn-outline-warning">Warning</button>
+                <button type="button" class="btn btn-outline-light">Light</button>
+            </div>
+
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/Z44z8OWlqwqj1IxUS6N4"
+                    style="height: 197px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Icon and floating buttons  -->
+            <h3 class="small-title">Icon & Floating Action Buttons</b></h3>
+            <div class="component-preview">
+                <button type="button" class="btn btn-outline-primary"><i
+                        class="fa fa-shopping-cart btn-icon"></i><span>Add to cart</span></button>
+                <label class="btn-switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/BRiBzOmARTlXumNmZoKD"
+                    style="height: 223px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+        <!-- Card -- component -->
+        <section id="card" class="component-container">
+            <h2 class="main-heading">Card</h2>
+            <p class="bold-desc">
+                Card are used to show user related data collectively, like product details.
+            </p>
+
+            <!-- profile card -->
+            <h3 class="small-title">Profile card</h3>
+            <p>It is available in two types. For square corner add <b>.card</b> class and for rounded corner add
+                <b>.card-rounded-corner</b>. (e.g. class="card card-round-corner")
+            </p>
+
+            <div class="component-preview flex-container">
+                <!-- square corner -->
+                <div class="card">
+                    <img src="../images/user3.webp" alt="Avatar">
+                    <div class="card-container">
+                        <h4><b>John Doe</b></h4>
+                        <p>Architect & Engineer</p>
+                    </div>
+                </div>
+                <!-- rounded corner -->
+                <div class="card card-round-corner">
+                    <img src="../images/profile.jpeg" alt="Avatar">
+                    <div class="card-container">
+                        <h4><b>Arjun</b></h4>
+                        <p>Software Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/4dnsOmhg0DdYiEQKoYnD"
+                    style="height: 354px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+            <!-- product card  -->
+            <h3 class="small-title">Product card</h3>
+            <p>
+                Use <b>.card</b> for the card and respective classes.
+            </p>
+
+            <div class="component-preview flex-container">
+                <div class="card">
+                    <img src="../images/webdev.png" alt="product">
+                    <div class="card-container">
+                        <h4 class="product-name">The complete 2022 Fullstack Web Developer Course</h4>
+                        <h3 class="product-owner">course by</h3>
+                        <div class="product-ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-empty"></i>
+                            <i class="fa fa-star-o"></i>
+                            <span>(4,352)</span>
+                        </div>
+                        <div class="product-price">&#8377;<span>199</span></div>
+                        <button class="btn product-add-to-cart-btn">Add to cart</button>
+                        <button class="product-wish-btn">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+                <!-- rounded corner -->
+                <div class="card card-round-corner">
+                    <img src="../images/webdev.png" alt="product">
+                    <div class="card-container">
+                        <h4 class="product-name">The complete 2022 Fullstack Web Developer Course</h4>
+                        <h3 class="product-owner">course by</h3>
+                        <div class="product-ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-empty"></i>
+                            <i class="fa fa-star-o"></i>
+                            <span>(4,352)</span>
+                        </div>
+                        <div class="product-price">&#8377;<span>199</span></div>
+                        <button class="btn product-add-to-cart-btn">Add To cart</button>
+                        <button class="product-wish-btn">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/aEhocjaxsfl43AooCIeG"
+                    style="height: 424px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+                <iframe src="https://carbon.now.sh/embed/JxMb6ykHUkr2rSluXGR5"
+                    style="height: 424px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Only text card -->
+            <h3 class="small-title">Text Only Card</h3>
+            <p>
+                This is Basic Card. This is text only card.
+            </p>
+            <div class="component-preview flex-container">
+                <div class="card">
+                    <div class="card-container">
+                        <h4 class="card-heading">Card Title</h4>
+
+                        <p class="card-body">
+                            I am a very simple card. I am good at containing small bits of information. I am convenient
+                            because I require little markup to use effectively.
+                        </p>
+                        <div class="card-footer">
+                            <a href="#">This is a link</a>
+                            <a href="#">This is a link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-code">
+
+                <iframe src="https://carbon.now.sh/embed/BjYORfi4vsbfQyD9WfSa"
+                    style="height: 335px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+            </div>
+            <!-- card with badges -->
+            <h3 class="small-title">Card with Badges</h3>
+            <p>
+                Use <b>.card</b> for the card and respective classes.
+            </p>
+            <div class="component-preview flex-container">
+                <div class="relative-card-container">
+                    <div class="card card-with-badge">
+                        <img src="../images/webdev.png" alt="product">
+                        <div class="card-container">
+                            <h4 class="product-name">The complete 2022 Fullstack Web Developer Course</h4>
+                            <h3 class="product-owner">course by</h3>
+                            <div class="product-ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-empty"></i>
+                                <i class="fa fa-star-o"></i>
+                                <span>(4,352)</span>
+                            </div>
+                            <div class="product-price">&#8377;<span>199</span></div>
+                            <button class="btn product-add-to-cart-btn">Add to cart</button>
+                            <button class="product-wish-btn">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-code">
+
+                <iframe src="https://carbon.now.sh/embed/4BP8IX75oIgEax4FHrcg"
+                    style="height: 483px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- card with text overlay -->
+            <h3 class="small-title">Card with text overlay</h3>
+            <p>
+                Use <b>.card</b> for the card and respective classes.
+            </p>
+            <div class="component-preview flex-container">
+                <div class="relative-card-container">
+                    <div class="card card-overlay-container">
+                        <img src="../images/webdev.png" alt="product">
+                        <div class="card-container">
+                            <h4 class="product-name">The complete 2022 Fullstack Web Developer Course</h4>
+                            <h3 class="product-owner">course by</h3>
+                            <div class="product-ratings">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-empty"></i>
+                                <i class="fa fa-star-o"></i>
+                                <span>(4,352)</span>
+                            </div>
+                            <div class="product-price">&#8377;<span>199</span></div>
+                            <button class="btn product-add-to-cart-btn">Add to cart</button>
+                            <button class="product-wish-btn">
+                                <i class="fa fa-heart"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-code">
+
+                <iframe src="https://carbon.now.sh/embed/aYoaDPLTFJt2B6brMUNd"
+                    style="height: 483px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- product card  dishmissable -->
+            <h3 class="small-title">Product card : Dishmissable</h3>
+            <p>
+                Use <b>.card-dismiss</b> for the card and respective classes.
+            </p>
+
+            <div class="component-preview flex-container">
+                <div class="card card-dismiss">
+                    <span class="btn-dismiss" onclick="this.parentElement.remove()"><i class="fa fa-times"
+                            aria-hidden="true"></i>
+                    </span>
+                    <img src="../images/webdev.png" alt="product">
+                    <div class="card-container">
+                        <h4 class="product-name">The complete 2022 Fullstack Web Developer Course</h4>
+                        <h3 class="product-owner">course by</h3>
+                        <div class="product-ratings">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-empty"></i>
+                            <i class="fa fa-star-o"></i>
+                            <span>(4,352)</span>
+                        </div>
+                        <div class="product-price">&#8377;<span>199</span></div>
+                        <button class="btn product-add-to-cart-btn">Add to cart</button>
+                        <button class="product-wish-btn">
+                            <i class="fa fa-heart"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/gsGWWI7ZBWeW94tG8ZyR"
+                    style="height: 477px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!--horizontal product card -->
+            <h3 class="small-title">Horizontal Product card</h3>
+            <p>Add <b>.card-horizontal</b> for Horizontal Products card </p>
+            <p>It is also available in two types. For square corner add <b>.card</b> class and for rounded corner
+                add
+                <b>.card-rounded-corner</b>. (e.g. class="card card-round-corner card-horizontal")
+            </p>
+
+            <div class="component-preview flex-container">
+                <!-- square corner -->
+                <div class="card card-horizontal">
+                    <img src="../images/product1.jpg" alt="product">
+                    <div class="card-container">
+                        <h2 class="product-name">Rubik's cube</h2>
+                        <h3 class="product-owner">By flipkart</h3>
+                        <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Tempora
+                            tenetur, autem ullam dignissimos enim temporibus eveniet consectetur dolores voluptas
+                            quas
+                            repudiandae aliquid placeat quasi doloremque libero quaerat recusandae. Iusto, repellat.
+                        </p>
+
+                        <p class="product-price">&#8377;<span>199</span></p>
+                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+                <!-- rounded corner -->
+                <div class="card card-round-corner card-horizontal">
+                    <img src="../images/apple-watch.jpg" alt="product">
+                    <div class="card-container">
+                        <h2 class="product-name">Apple Watch</h2>
+                        <h3 class="product-owner">By Apple</h3>
+                        <p class="product-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Tempora
+                            tenetur, autem ullam dignissimos enim temporibus eveniet consectetur dolores voluptas
+                            quas
+                            repudiandae aliquid placeat quasi doloremque libero quaerat recusandae. Iusto, repellat.
+                        </p>
+
+                        <p class="product-price">&#8377;<span>4199</span></p>
+                        <button class="btn btn-primary">Buy Now</button>
+                        <button class="btn btn-warning">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/2jdpLc30vq2zdUrrcmAC"
+                    style="height: 319px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+
+                <iframe src="https://carbon.now.sh/embed/U6edNo82sZLz5XivmYrQ"
+                    style="height: 325px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Grid -- component -->
+        <section id="grid" class="component-container">
+            <h2 class="main-heading">Simplified Grid</h2>
+            <p class="bold-desc">
+                Simplified Grid is a CSS grid for your website. By just add some classes.
+            </p>
+
+            <h3 class="small-title">Grid</h3>
+            <p>Simple Grid is a <b>12-column</b>, lightweight CSS grid to help you quickly build responsive websites.
+            </p>
+            <p>Each column is contained within rows, which are contained within a container. If you want to make mobile
+                responsive then add <b>.container-responsive</b> class to the container. (e.g. class=container
+                container-responsive"</p>
+
+            <div class="component-preview">
+                <div class="container container-responsive">
+                    <div class="row">
+                        <div class="col-1">one</div>
+                        <div class="col-11">eleven</div>
+                        <div class="col-2">two</div>
+                        <div class="col-10">ten</div>
+                        <div class="col-3">three</div>
+                        <div class="col-9">nine</div>
+                        <div class="col-4">four</div>
+                        <div class="col-8">eight</div>
+                        <div class="col-5">five</div>
+                        <div class="col-7">seven</div>
+                        <div class="col-6">six</div>
+                        <div class="col-6">six</div>
+                        <div class="col-12">twelve</div>
+                    </div>
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/sTKpG2Pt6XPRbCvwjsue"
+                    style="height: 372px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Input -- component -->
+        <section id="input" class="component-container">
+            <h2 class="main-heading">Input</h2>
+            <p class="bold-desc">
+                The <b>Input</b> field can be specified using where a user can enter data. Like User's Name, Password,
+                Email, etc.
+            </p>
+
+            <h3 class="small-title">Input</h3>
+            <p>We have a simple input field with placeholder. Input are avilable in different colors too.
+                For using different colors use different classes like <b>.input-primary</b>, <b>.input-secondary</b>,
+                <b>.input-success</b>, <b>.input-danger</b>, <b>.input-warning</b>, <b>.input-light</b>
+                (e.g. class="input-field input-primary")
+            </p>
+
+            <div class="component-preview">
+                <div class="form-group">
+                    <input class="input-field" type="text" placeholder="Input something">
+                    <input class="input-field input-primary" type="text" placeholder="Input something">
+                    <input class="input-field input-secondary" type="text" placeholder="Input something">
+                    <input class="input-field input-success" type="text" placeholder="Input something">
+                    <input class="input-field input-danger" type="text" placeholder="Input something">
+                    <input class="input-field input-warning" type="text" placeholder="Input something">
+                    <input class="input-field input-light" type="text" placeholder="Input something">
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/TD6bGJpCOT2hQfuTVm5A"
+                    style="height: 232px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- bottom border input -->
+            <h3 class="small-title">Bottom Bordered Input</h3>
+            <p>
+                You have to add only class <b>.input-bottm-border</b>
+            </p>
+
+            <div class="component-preview">
+                <div class="form-group">
+                    <input class="input-field input-bottom-border" type="text" placeholder="Input something">
+                    <input class="input-field input-bottom-border input-primary" type="text"
+                        placeholder="Input something">
+                    <input class="input-field input-bottom-border input-secondary" type="text"
+                        placeholder="Input something">
+                    <input class="input-field input-bottom-border input-success" type="text"
+                        placeholder="Input something">
+                    <input class="input-field input-bottom-border input-danger" type="text"
+                        placeholder="Input something">
+                    <input class="input-field input-bottom-border input-warning" type="text"
+                        placeholder="Input something">
+                    <input class="input-field input-bottom-border input-light" type="text"
+                        placeholder="Input something">
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/PtDqWoYUQPMJ7dFZI0t8"
+                    style="height: 337px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Text box -->
+            <h3 class="small-title">TextBox</h3>
+            <p>
+                Use <b>&lt;textarea&gt;</b> tag for text box and <b>.textbox</b> class for styling text box and
+                <b>.textbox-label</b>.
+            </p>
+
+            <div class="component-preview">
+                <label class="textbox-label" for="text-box">My TextBox : </label>
+                <textarea class="textbox" name="" id="text-box"></textarea>
+            </div>
+            <div class="component-code">
+
+                <iframe src="https://carbon.now.sh/embed/WcFW3OeKr6tMbDAPSYhl"
+                    style="height: 140px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <!-- input with error handling -->
+            <h3 class="small-title">Input with error handling</h3>
+            <p>
+                You have to toggle <b>error</b> class to hide and show error and messages.
+            </p>
+
+            <div class="component-preview">
+                <div class="input-container">
+                    <label>Username *</label>
+                    <input type="text">
+                    <div class="error-message">Username is a required field.</div>
+                </div>
+                <div class="input-container error">
+                    <label>Password *</label>
+                    <input type="text">
+                    <div class="error-message">Password is a required field.</div>
+                </div>
+            </div>
+            <div class="component-code">
+
+                <iframe src="https://carbon.now.sh/embed/BpYiS649fv5FijHhy6n6"
+                    style="height: 260px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!--Image -- component -->
+        <section id="image" class="component-container">
+            <h2 class="main-heading">Images</h2>
+            <p class="bold-desc">
+                Images can be responsive to fit the parent's width, and also can be customised to be round shaped
+            </p>
+
+            <h3 class="small-title">Example of Responsive Image</h3>
+            <p>You can add class <b> img-responsive</b> to make your image fit the width of container. It's height will
+                get adjusted by keeping the aspect ratio same. If you want to change the aspect ratio, you will have to
+                crop the image.</p>
+
+            <div class="component-preview">
+                <img class="img-responsive" src="../images/responsive-image.jpg" alt="img">
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/OYSOskXcf90jtEeswysf"
+                    style="height: 93px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <h3 class="small-title">Example of Round Image</h3>
+            <p>You can add class <b>img-round</b> to make your image round shaped.</p>
+
+            <div class="component-preview">
+                <img class="img-round" src="../images/brand-img.png" alt="img">
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/4yd3oZOlVXjQ096k0A7E"
+                    style="height: 93px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!--Lists -- component -->
+        <section id="lists" class="component-container">
+            <h2 class="main-heading">Lists</h2>
+            <p class="bold-desc">Lists can be used at so many places, navigation bar, stacked notifications, article
+                pages, etc.</p>
+
+            <h3 class="small-title">Example of Unordered List with bullets</h3>
+            <p>Add class according to bullet style. Copy html code below and add your desired list items.</p>
+
+            <div class="component-preview flex-container">
+                <ul class="styled-list">
+                    <li>list item1</li>
+                    <li>list item2</li>
+                    <li>list item3</li>
+                </ul>
+                <ul class="styled-list list-style-square">
+                    <li>list item1</li>
+                    <li>list item2</li>
+                    <li>list item3</li>
+                </ul>
+                <ul class="styled-list list-style-circle">
+                    <li>list item1</li>
+                    <li>list item2</li>
+                    <li>list item3</li>
+                </ul>
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/W63kNVrPYOArrsCcC7zn"
+                    style="height: 353px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- ordered list -->
+            <h3 class="small-title">Example of Ordered List with bullets</h3>
+            <p>Add class according to bullet style. Copy html code below and add your desired list items.
+                To reverse the order of ordered list, add <b> reversed </b> attribute to <b> ol </b> element</p>
+
+            <div class="component-preview flex-container">
+                <ol class="styled-list flex-items list-container">
+                    <li>List item with numbers</li>
+                    <li>List item with numbers</li>
+                    <li>List item with numbers</li>
+                </ol>
+                <ol class="styled-list list-style-small-alpha flex-items list-container" reversed>
+                    <li>Reversed list item</li>
+                    <li>Reversed list item</li>
+                    <li>Reversed list item</li>
+                </ol>
+                <ol class="styled-list list-style-small-alpha flex-items list-container">
+                    <li>List item with alphabets</li>
+                    <li>List item with alphabets</li>
+                    <li>List item with alphabets</li>
+                </ol>
+                <ol class="styled-list list-style-small-roman flex-items list-container">
+                    <li>List item with roman</li>
+                    <li>List item with roman</li>
+                    <li>List item with roman</li>
+                </ol>
+                <ol class="styled-list list-style-capital-alpha flex-items list-container">
+                    <li>List item with alphabets</li>
+                    <li>List item with alphabets</li>
+                    <li>List item with alphabets</li>
+                </ol>
+                <ol class="styled-list list-style-capital-roman flex-items list-container">
+                    <li>List item with roman</li>
+                    <li>List item with roman</li>
+                    <li>List item with roman</li>
+                </ol>
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/RVvicGlcSKR7R9ze9hFB"
+                    style="height: 632px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- no bullets list -->
+            <h3 class="small-title">Example of List with no bullets</h3>
+            <p>If you want list stacked but with no bullet and indentation, then you can add <b>list-style-none</b>
+                class.</p>
+            <p>Class <b> styled-list </b> applies padding between two list items.</p>
+
+            <div class="component-preview flex-container">
+                <ul class="styled-list list-style-none">
+                    <li>list item1</li>
+                    <li>list item2</li>
+                    <li>list item3</li>
+                </ul>
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/dMSvZe1tKEGpnBrxP2nf"
+                    style="height: 167px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!--Modal -- component -->
+        <section id="modal" class="component-container">
+            <h2 class="main-heading">Modal</h2>
+            <p class="bold-desc">Modals are positioned over everything else in the document and remove scroll from the
+                page. It gets closed only with close button on modal pop-up.</p>
+
+            <h3 class="small-title">Example of Modal</h3>
+            <p>Add class accordingly.</p>
+
+            <div class="component-preview flex-container">
+                <div class="modal">
+                    <h2 class="modal-header">Modal Header <span>X</span></h2>
+                    <p class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur soluta
+                        culpa illum voluptates inventore id, blanditiis beatae, nam tempore, consectetur deserunt qui
+                        porro a ratione laboriosam. Dignissimos tempore recusandae dolorum!</p>
+                    <div class="modal-footer">Modal footer</div>
+                </div>
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/HWbuSqISgahdBJL7vw7g"
+                    style="height: 204px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Modal live demo -->
+            <h3 class="small-title">Live Demo</h3>
+            <p>Click on the below CTA to open modal. Once the modal is open user will not be able to scroll or do any
+                action on the main page. To close the pop-up, click on close icon or Back button. Functionality is
+                achieved using JavaScript</p>
+
+            <div class="component-preview">
+                <button class="btn btn-primary" id="show-modal">Show</button>
+                <div class="modal-container" id="modal-example">
+                    <div class="modal">
+                        <h2 class="modal-header">Modal Header <span id="modal-close-btn">X</span></h2>
+                        <p class="modal-body">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+                            soluta culpa illum voluptates inventore id, blanditiis beatae, nam tempore, consectetur
+                            deserunt qui porro a ratione laboriosam. Dignissimos tempore recusandae dolorum!</p>
+                        <div class="modal-footer">Modal footer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/aDypGTcH11Ra580IpixE"
+                    style="height: 260px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- javascript for modal -->
+            <h3 class="small-title">JavaScript</h3>
+
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/ILA0OT66qfZyhj7p2gNd"
+                    style="height: 465px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Navbar -- component -->
+        <section id="navbar" class="component-container">
+            <h2 class="main-heading">Navbar</h2>
+            <p class="bold-desc">
+                Navigation bar is used to navigate through the web apps or websites. This navigation component is
+                responsive. It is a hamburger menu in medium and small devices
+            </p>
+
+            <h3 class="small-title">Navigation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, vero dignissimos sapiente laudantium
+                nostrum nulla ullam doloremque, perferendis quam veritatis sed dolore, similique aut amet. Aliquid harum
+                aperiam nisi iure.
+            </p>
+
+            <div class="component-preview">
+                <nav class="nav nav-boxshadow">
+                    <a href="/" class="brand">
+                        <div class="logo">
+                            <img src="../images/nav-logo.png" alt="logo">
+                        </div>
+                        <h1 class="brand-name">
+                            Fabelle-UI
+                        </h1>
+                    </a>
+                    <div class="nav-links">
+                        <a class="nav-link" href="">Home</a>
+                        <a class="nav-link" href="">Link1</a>
+                        <a class="nav-link" href="">Link2</a>
+                        <a class="nav-link" href="">Link2</a>
+                    </div>
+                    <div class="nav-search">
+                        <i class="fa fa-search"></i>
+                        <input type="text" placeholder="Type to search">
+                    </div>
+                    <div class="nav-icons">
+                        <a href="">
+                            <i class="fa fa-user"></i>
+                            <span class="nav-icon-text">Login</span>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-heart" aria-hidden="true"></i>
+                            <span class="nav-icon-text">Wishlist</span>
+                        </a>
+                        <a href="">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="nav-icon-text">cart</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/q5QezPuFyLnJ1Ceh230y"
+                    style="height: 669px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- Rating -- component -->
+        <section id="rating" class="component-container">
+            <h2 class="main-heading">Rating</h2>
+            <p class="bold-desc">
+                Rating components can be used as read-only badge or in reviews section. Can be used in reviews section
+                as form too.
+            </p>
+
+            <h3 class="small-title">Example of read-only ratings</h3>
+            <p>There are two types, input read-only and badge
+            </p>
+
+            <div class="component-preview ">
+                <div class="rating-star-container">
+                    <label>
+                        <input class="rating-star-input" type="checkbox" checked disabled>
+                        <i class="fa fa-star rating-star-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-star-input" type="checkbox" checked disabled>
+                        <i class="fa fa-star rating-star-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-star-input" type="checkbox" checked disabled>
+                        <i class="fa fa-star rating-star-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-star-input" type="checkbox" disabled>
+                        <i class="fa fa-star rating-star-icon"></i>
+                    </label>
+                    <label>
+                        <input class="rating-star-input" type="checkbox" disabled>
+                        <i class="fa fa-star rating-star-icon"></i>
+                    </label>
+                </div>
+
+                <div class="rating-badge">
+                    <span class="rating-badge-number">5</span>
+                    <span class="rating-badge-star"><i class="fa fa-star"></i></span>
+                    <span class="rating-badge-number">|</span>
+                    <span class="rating-badge-number">5</span>
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/N7rIGFBxnoqnA8VkkavP"
+                    style="height: 614px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- live demo of ratings live demo -->
+            <h3 class="small-title">Live Demo</h3>
+            <div class="component-preview ">
+                <form class="example-rating-form">
+                    <h5>Rate our service</h5>
+                    <div class="rating-star-container">
+                        <label>
+                            <input class="rating-star-input" type="checkbox">
+                            <i class="fa fa-star rating-star-icon"></i>
+                        </label>
+                        <label>
+                            <input class="rating-star-input" type="checkbox">
+                            <i class="fa fa-star rating-star-icon"></i>
+                        </label>
+                        <label>
+                            <input class="rating-star-input" type="checkbox">
+                            <i class="fa fa-star rating-star-icon"></i>
+                        </label>
+                        <label>
+                            <input class="rating-star-input" type="checkbox">
+                            <i class="fa fa-star rating-star-icon"></i>
+                        </label>
+                        <label>
+                            <input class="rating-star-input" type="checkbox">
+                            <i class="fa fa-star rating-star-icon"></i>
+                        </label>
+                    </div>
+                    <button class="btn btn-primary">Submit</button>
+                </form>
+                <div class="rating-example-number-show"></div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/LyHNTSORsYt6IgmE6Dh3"
+                    style="height: 576px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <h3 class="small-title">JavaScript</h3>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/aWvGHtRTODirI2BhgqFW"
+                    style="height: 558px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- slider -- component -->
+        <section id="slider" class="component-container">
+            <h2 class="main-heading">Slider</h2>
+            <p class="bold-desc">
+                Sliders are used to decide range for something like sound in videos, price in shopping sites, etc.</p>
+
+            <h3 class="small-title">Example of styled slider</h3>
+
+            <div class="component-preview ">
+                <div class="slider-container">
+                    <label class="slider-track" for="range">
+                        <input class="slider-input" type="range" name="range" id="range" min="0" max="150" value="15" />
+                    </label>
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/RiH8h0c45BXOWF1ayzNO"
+                    style="height: 167px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Example of slider with icon -->
+            <h3 class="small-title">Example of slider with icon</h3>
+            <div class="component-preview ">
+                <div class="slider-with-icon">
+                    <label class="slider-with-icon-label" for="range2"><i class="fa fa-volume-up"></i></label>
+                    <input type="range" name="range2" id="range2" min="0" max="100" value="30" />
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/8AY8f5jAQVq82V5zMPfP"
+                    style="height: 148px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- typography -- component -->
+        <section id="typography" class="component-container">
+            <h2 class="main-heading">Typography</h2>
+            <p class="bold-desc">Check out below text utilities.</p>
+
+            <h3 class="small-title">Example of Heading text</h3>
+            <p>For heading you can use <b>h1, h2, h3, h4, h5, h6 </b> elements.</p>
+            <p>The same font-styling is present for class names <b> h1, h2, h3, h4, h5, h6</b> class. You can add one of
+                these classes to style the text.</p>
+
+            <div class="component-preview">
+                <h1>H1-Heading</h1>
+                <h2>H2-Heading</h2>
+                <h3>H3-Heading</h3>
+                <h4>H4-Heading</h4>
+                <h5>H5-Heading</h5>
+                <h6>H6-Heading</h6>
+
+                <!-- Style text with class -->
+                <div class="h1">H1-Heading</div>
+                <h3 class="h4">H4-Heading</h3>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/41wkX3MhPr5RSYicjJKM"
+                    style="height: 260px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- paragraph component -->
+            <h3 class="small-title">Example of Paragraph text</h3>
+            <p>For paragraph you can use p element.</p>
+            <p>The same font-styling is present for class name <b> p, body-cp-rg</b> class. You can add one of these
+                classes to style the text. Other than this if you want to adjust text to small or large, you can use<b>
+                    body-cp-lg, body-cp-sm </b> class.</p>
+
+            <div class="component-preview">
+                <p>P-Paragraph-Text</p>
+
+                <!-- Style text with class -->
+                <div class="p">Text with paragraph font</div>
+                <h4 class="p">H4-Heading with Paragraph font</h4>
+                <p class="body-cp-lg">P-Paragraph-body-copy-large</p>
+                <p class="body-cp-rg">P-Paragraph-body-copy-regular style</p>
+                <p class="body-cp-md">P-Paragraph-body-copy-medium</p>
+                <p class="body-cp-sm">P-Paragraph-body-copy-small</p>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/alKgXd2Mws9UYkrvupTh"
+                    style="height: 241px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Positioned component -->
+            <h3 class="small-title">Example of Positioned text</h3>
+            <p>To align the text add <b> text-center, text-left, text-right </b> class to wrapper element</p>
+
+            <div class="component-preview">
+                <h6 class="text-center">H6-Heading Text Align Center</h6>
+                <h6 class="text-left">H6-Heading Text Align left</h6>
+                <h6 class="text-right">H6-Heading Text Align right</h6>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/kIlDwQJfLGMaSvqGyK4V"
+                    style="height: 130px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- Some extra styles component -->
+            <h3 class="small-title">Example of Some Extra styles</h3>
+            <p>
+            <ul style="padding: 2rem;">
+                <li>You can use the mark tag to highlight text. Add <b> text-mark </b>class to mark tag</li>
+                <li>To strike-through the text, add <b> text-strike-through </b> class</li>
+                <li>To make text bold (weight: 700), add <b>text-bold-weight </b>class</li>
+                <li>To make text regular weight (weight: 500), add<b> text-regular-weight</b> class</li>
+                <li>To make text light (weight: 300), add <b> text-light-weight </b> class</li>
+                <li>To make text small in size (12px), add <b> text-small-size </b>class</li>
+                <li>To make text color change there are 3 class, add one of the classes <b>primary-text-color,
+                        secondary-text-color, success-text-color</b> </li>
+            </ul>
+            </p>
+
+            <div class="component-preview">
+                <p>You can use the mark tag to <mark class="text-mark">highlight</mark> text.</p>
+                <p class="text-strike-through">This line of text is meant to be treated as no longer accurate.</p>
+                <p class="text-bold-weight">Text with bold font weight</p>
+                <p class="text-regular-weight">Text with regular font weight</p>
+                <p class="text-light-weight">Text with light font weight</p>
+                <p><small class="text-small-size">Small size text</small></p>
+                <p class="primary-text-color">Text with primary-color</p>
+                <p class="secondary-text-color">Text with secondary-color</p>
+                <p class="success-text-color">Text with success-color</p>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/Ip4mbz2NSt5UUA6aTTci"
+                    style="height: 241px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+
+        <!-- toast -- component -->
+        <section id="toast" class="component-container">
+            <h2 class="main-heading">Toast</h2>
+            <p class="bold-desc">This component can be used for toast or snackbar component. Toast is mostly used to
+                show feedback message. Snackbar is to used show message that need user action.</p>
+
+            <h3 class="small-title">Example of Toast</h3>
+            <p>Add <b> toast </b>class to wrapper. Toast has 3 themes, for error, success, warning, add <b>
+                    toast-success, toast-error, toast-info </b>class to style the theme.</p>
+
+            <div class="component-preview flex-container">
+                <div class="unhide-item toast toast-success">
+                    Saved!
+                    <button class="close-btn">X</button>
+                </div>
+
+                <div class="unhide-item toast toast-error">
+                    Not Saved! Try again later.
+                    <button class="close-btn">X</button>
+                </div>
+
+                <div class="unhide-item toast toast-inform">
+                    Saving to server...
+                    <button class="close-btn">X</button>
+                </div>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/3fNvfMXgMu4rNqPrOClS"
+                    style="height: 335px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+
+            <!-- live demo -->
+            <h3 class="small-title">Live Demo</h3>
+            <div class="component-preview">
+                <div class="toast toast-error" id="toast-example-success">
+                    Something went wrong!
+                    <button class="close-btn" id="toast-example-success-btn">X</button>
+                </div>
+                <button class="btn btn-primary show-toast-example-btn">Show Toast</button>
+            </div>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/QBlbEM2rpl2g5plYFZ2u"
+                    style="height: 167px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+            <h3 class="small-title">JavaScript</h3>
+            <div class="component-code">
+                <iframe src="https://carbon.now.sh/embed/tc9lSA3IsvZZ40U3hr0H"
+                    style="height: 353px; width: 100%; border:0; transform: scale(1); overflow:hidden; background: #090300;"
+                    sandbox="allow-scripts allow-same-origin">
+                </iframe>
+            </div>
+        </section>
+    </main>
+    <!-- Main -- Ends -->
+    <script src="../index.js" defer></script>
+    <script src="./sidebar.js" defer></script>
+</body>
+
+</html>
